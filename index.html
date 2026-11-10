@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Papier, in de tekenstijl van Therapy in London</title>
+    <meta
+      name="description"
+      content="Papier houdt de tekenstijl van Therapy in London aan. Op de homepage doet iemand de deur open."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #231e1a;
+        --muted: #5e564c;
+        --paper: #f3eee6;
+        --serif: Fraunces, Palatino, Georgia, serif;
+        --sans: Outfit, "Segoe UI", sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        line-height: 1.5;
+      }
+      .wrap { width: min(1100px, calc(100% - 2.4rem)); margin: 0 auto; padding: 2.2rem 0 3rem; }
+      h1 {
+        font-family: var(--serif);
+        font-weight: 560;
+        letter-spacing: -0.04em;
+        line-height: 0.98;
+        font-size: clamp(2.8rem, 6vw, 4.8rem);
+        margin: 0 0 0.8rem;
+        max-width: 14ch;
+      }
+      .inleiding { max-width: 62ch; font-size: 1.08rem; }
+      .keuze {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 1.8rem;
+      }
+      a.kaart {
+        display: grid;
+        gap: 0.7rem;
+        color: inherit;
+        text-decoration: none;
+        background: #faf7f2;
+        border-radius: 1.2rem;
+        overflow: hidden;
+        box-shadow: 0 16px 40px rgba(35, 30, 26, 0.06);
+      }
+      a.kaart img { width: 100%; height: 240px; object-fit: cover; display: block; }
+      a.kaart.wit { background: #fff; }
+      a.kaart.wit img { object-fit: contain; background: #fff; }
+      a.kaart div { padding: 0.2rem 1.1rem 1.2rem; }
+      a.kaart h2 {
+        font-family: var(--serif);
+        font-size: 2rem;
+        margin: 0.2rem 0;
+        letter-spacing: -0.03em;
+      }
+      a.kaart p { margin: 0; color: var(--muted); }
+      a.kaart:hover h2 { text-decoration: underline; text-underline-offset: 0.16em; }
+      .noot { margin-top: 1.4rem; color: var(--muted); max-width: 68ch; }
+      @media (max-width: 800px) {
+        .keuze { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Wit, met de poppetjes.</h1>
+      <p class="inleiding">
+        De bovenste kaart is een voorbeeldwebsite. Witte pagina, en de poppetjes die we al hebben, op hun plek in een homepage.
+      </p>
+      <div class="keuze">
+        <a class="kaart wit" href="wit/index.html">
+          <img src="vorm/doodles/strolling.svg" alt="Het poppetje dat wandelt, met een uitgestoken hand." />
+          <div>
+            <p>De voorbeeldwebsite</p>
+            <h2>Wit</h2>
+            <p>Witte pagina. De poppetjes van de site die je koos, bij de deur, de gesprekken en de groep.</p>
+          </div>
+        </a>
+        <a class="kaart" href="plaatjes/index.html">
+          <img src="vorm/deur-doodle.jpg" alt="Iemand legt een hand op een deur waar de zon doorheen schijnt." />
+          <div>
+            <p>Groot bekijken</p>
+            <h2>Plaatjes</h2>
+            <p>De deur, en de echte poppetjes. Klik op een plaatje, dan vult het het scherm.</p>
+          </div>
+        </a>
+        <a class="kaart" href="blokken/index.html">
+          <img src="tekeningen/jeroen.jpg" alt="Foto van Jeroen Siep" style="object-position: center 20%" />
+          <div>
+            <p>De mix</p>
+            <h2>Blokken</h2>
+            <p>Drie blokken naast elkaar, met poppetjes in de stijl van Esther Perel.</p>
+          </div>
+        </a>
+        <a class="kaart" href="papier/index.html">
+          <img src="tekeningen/papier-deur.svg" alt="Iemand doet een deur open, met de zon erachter." />
+          <div>
+            <p>De tekenstijl</p>
+            <h2>Papier</h2>
+            <p>Gelinieerd papier. Iemand houdt de deur open, de zon schijnt naar je toe.</p>
+          </div>
+        </a>
+        <a class="kaart" href="direct/index.html">
+          <img src="tekeningen/jeroen.jpg" alt="Foto van Jeroen Siep" style="object-position: center 20%" />
+          <div>
+            <p>De layout</p>
+            <h2>Direct</h2>
+            <p>Volwassen pagina. Foto, gesprekken en de bewustwordingsgroep elk een eigen plek.</p>
+          </div>
+        </a>
+        <a class="kaart" href="inkt/index.html">
+          <img src="tekeningen/gesprek.jpg" alt="Tekening van twee mensen in gesprek aan een tafel, met de kade achter het raam." />
+          <div>
+            <p>Richting één</p>
+            <h2>Inkt</h2>
+            <p>Rustige pagina’s, grote tekening, aparte pagina voor gesprekken, de groep en contact.</p>
+          </div>
+        </a>
+        <a class="kaart" href="lijn/index.html">
+          <img src="tekeningen/cirkel.jpg" alt="Tekening van een kleine groep mensen op stoelen in een kring." />
+          <div>
+            <p>Richting twee</p>
+            <h2>Lijn</h2>
+            <p>Eén pagina. Datum, prijs en plek staan in het eerste scherm, met de vragen die mensen googelen.</p>
+          </div>
+        </a>
+        <a class="kaart" href="zacht/index.html">
+          <img src="tekeningen/zacht-gesprek.jpg" alt="Vrolijke platte tekening van twee mensen die lachend koffie drinken." />
+          <div>
+            <p>Richting drie · als Headspace</p>
+            <h2>Zacht</h2>
+            <p>Wit, rond en helder. Twee grote kaarten, en de vraag: waar zit je vandaag?</p>
+          </div>
+        </a>
+        <a class="kaart" href="strip/index.html">
+          <img src="tekeningen/strip-ochtend.jpg" alt="Cartoon van iemand aan de keukentafel met denk-wolken boven het hoofd." />
+          <div>
+            <p>Richting vier · eigen verhaal</p>
+            <h2>Strip</h2>
+            <p>Een cartoon in vier platen. Lichter, met humor. Het hoofd heeft al een planning.</p>
+          </div>
+        </a>
+      </div>
+      <p class="noot">
+        De tekeningen zijn sfeer, geen foto’s van cliënten en ook nog geen portret van Jeroen.
+        Prijzen en de reeks van 8 januari 2027 komen van de huidige site. Klopt er iets niet meer, dan pas je dat in één zin aan.
+      </p>
+    </main>
+  </body>
+</html>

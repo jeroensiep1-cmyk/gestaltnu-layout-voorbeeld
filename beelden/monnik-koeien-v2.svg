@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d">
+  <title id="t">Monnik en koeien</title>
+  <desc id="d">Monnik zegt OOOOOOOM. Een koe zegt: hij heeft het andersom.</desc>
+  <rect width="800" height="600" fill="#f6eedf"/>
+  <path d="M70 310c20-170 160-250 330-245s310 120 295 280-175 220-340 200S45 460 70 310" fill="none" stroke="#0f6e6e" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+  <!-- hill -->
+  <path d="M90 470c120-70 250-90 400-70s220 50 250 90v40H90z" fill="#d8c8a8" stroke="#3a2f24" stroke-width="5" stroke-linejoin="round"/>
+  <!-- tree -->
+  <path d="M160 430c0-20 8-40 18-40s18 20 18 40" fill="none" stroke="#3a2f24" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="178" cy="360" rx="48" ry="55" fill="#7ea86a" stroke="#3a2f24" stroke-width="5"/>
+  <!-- monk -->
+  <ellipse cx="520" cy="300" rx="42" ry="40" fill="#f0d7c2" stroke="#3a2f24" stroke-width="6"/>
+  <path d="M478 330c10 70 30 110 42 110s32-40 42-110" fill="#c45c3e" stroke="#3a2f24" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M505 292c6 4 24 4 30 0" fill="none" stroke="#3a2f24" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="508" cy="292" r="3" fill="#3a2f24"/>
+  <circle cx="532" cy="292" r="3" fill="#3a2f24"/>
+  <!-- cows -->
+  <ellipse cx="300" cy="455" rx="78" ry="42" fill="#f7f4ef" stroke="#3a2f24" stroke-width="6"/>
+  <ellipse cx="250" cy="445" rx="28" ry="24" fill="#f7f4ef" stroke="#3a2f24" stroke-width="6"/>
+  <ellipse cx="275" cy="450" rx="16" ry="12" fill="#3a2f24"/>
+  <ellipse cx="330" cy="460" rx="18" ry="14" fill="#3a2f24"/>
+  <circle cx="238" cy="442" r="3.5" fill="#3a2f24"/>
+  <path d="M232 452c6 5 16 5 22 0" fill="none" stroke="#3a2f24" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="430" cy="468" rx="70" ry="36" fill="#f7f4ef" stroke="#3a2f24" stroke-width="6"/>
+  <ellipse cx="480" cy="455" rx="26" ry="22" fill="#f7f4ef" stroke="#3a2f24" stroke-width="6"/>
+  <ellipse cx="455" cy="470" rx="14" ry="11" fill="#3a2f24"/>
+  <circle cx="492" cy="452" r="3.5" fill="#3a2f24"/>
+  <!-- flowers -->
+  <circle cx="200" cy="500" r="5" fill="#c45c3e"/>
+  <circle cx="360" cy="510" r="4" fill="#e8b84a"/>
+  <circle cx="560" cy="505" r="5" fill="#7ea86a"/>
+  <!-- bubbles -->
+  <rect x="545" y="175" width="170" height="58" rx="18" fill="#fff" stroke="#3a2f24" stroke-width="5"/>
+  <text x="630" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#2a231c">OOOOOOOM</text>
+  <rect x="95" y="380" width="220" height="52" rx="16" fill="#fff" stroke="#3a2f24" stroke-width="5"/>
+  <text x="205" y="413" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#2a231c">HIJ HEEFT HET ANDERSOM.</text>
+</svg>
