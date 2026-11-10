@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestalt Nu · voorpagina v30 (doorontwikkeling)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Caveat:wght@500;600&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* a-stijlblad */
+        --creme: #f6eedf;
+        --inkt: #3b2a20;
+        --gedempt: #5e564c;
+        --teal: #00a8a5;
+        --teal-donker: #00706e;
+        --terracotta: #c8664a;
+        --terracotta-donker: #a4492f;
+        --serif: Fraunces, Georgia, serif;
+        --hand: Caveat, "Segoe Print", cursive;
+        --sans: Outfit, "Segoe UI", sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 20% 10%, rgba(255,255,255,0.45), transparent 50%),
+          radial-gradient(ellipse at 80% 60%, rgba(196,92,62,0.05), transparent 45%),
+          var(--creme);
+        color: var(--inkt);
+        font-family: var(--sans);
+        line-height: 1.5;
+      }
+      a { color: inherit; }
+      .blad {
+        width: min(1100px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 1.2rem 0 4rem;
+      }
+      .noot {
+        max-width: 62ch;
+        margin: 0 0 1.4rem;
+        padding: 0.85rem 1rem;
+        border-left: 3px solid var(--teal);
+        color: var(--gedempt);
+        font-size: 0.95rem;
+        background: rgba(255,255,255,0.35);
+      }
+      .noot strong { color: var(--inkt); }
+      header.kop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.6rem 0 1.6rem;
+      }
+      .merk {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        text-decoration: none;
+        font-family: var(--serif);
+        font-size: 1.35rem;
+        font-weight: 560;
+        letter-spacing: -0.03em;
+      }
+      .merk svg { width: 2.1rem; height: 2.1rem; flex: none; }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem 1.15rem;
+        justify-content: flex-end;
+        font-size: 0.92rem;
+      }
+      nav a { text-decoration: none; color: var(--gedempt); }
+      nav a:hover { color: var(--teal); }
+      .held {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 2rem 2.4rem;
+        align-items: center;
+        padding: 0.5rem 0 2.8rem;
+      }
+      .wenk {
+        margin: 0 0 0.55rem;
+        font-family: var(--hand);
+        font-size: 1.55rem;
+        color: var(--teal);
+        line-height: 1.15;
+      }
+      h1 {
+        margin: 0 0 0.85rem;
+        font-family: var(--serif);
+        font-weight: 560;
+        font-size: clamp(2.6rem, 5.5vw, 4.1rem);
+        letter-spacing: -0.04em;
+        line-height: 0.98;
+        max-width: 10ch;
+      }
+      .lede {
+        margin: 0 0 1.35rem;
+        max-width: 34ch;
+        color: var(--gedempt);
+        font-size: 1.05rem;
+      }
+      .acties {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.9rem 1.2rem;
+      }
+      .knop {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        padding: 0.78rem 1.35rem;
+        background: var(--teal-donker);
+        color: var(--creme);
+        text-decoration: none;
+        border-radius: 0.55rem 0.95rem 0.5rem 1.05rem;
+        font-weight: 600;
+        box-shadow: 0 10px 24px rgba(0, 112, 110, 0.22);
+      }
+      .knop:hover { background: var(--inkt); }
+      .knop--whatsapp {
+        background: var(--teal);
+        font-size: 1.05rem;
+        padding: 0.9rem 1.55rem;
+        box-shadow: 0 12px 28px rgba(0, 168, 165, 0.28);
+      }
+      .knop--whatsapp:hover { background: var(--teal-donker); }
+      .meer {
+        color: var(--inkt);
+        text-decoration: none;
+        border-bottom: 2px solid var(--terracotta);
+        padding-bottom: 0.05rem;
+        font-weight: 500;
+      }
+      .contact {
+        margin-top: 2.8rem;
+        padding: 1.8rem 1.6rem 1.7rem;
+        border-radius: 1.4rem 1.8rem 1.3rem 1.9rem;
+        background: rgba(255, 255, 255, 0.42);
+        border: 1.5px solid rgba(0, 112, 110, 0.18);
+      }
+      .contact h2 {
+        margin: 0 0 0.35rem;
+        font-family: var(--serif);
+        font-weight: 560;
+        font-size: clamp(1.7rem, 3vw, 2.2rem);
+        letter-spacing: -0.03em;
+      }
+      .contact .wenk { margin-bottom: 1rem; }
+      .contact-acties {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.85rem 1.1rem;
+        margin-bottom: 1.1rem;
+      }
+      .contact-lijst {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem 1.4rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: var(--gedempt);
+        font-size: 1.02rem;
+      }
+      .contact-lijst a {
+        color: var(--teal-donker);
+        text-decoration: none;
+        border-bottom: 1.5px solid rgba(200, 102, 74, 0.55);
+      }
+      .contact-lijst a:hover { color: var(--terracotta-donker); }
+      .foto-wrap {
+        position: relative;
+        justify-self: end;
+        width: min(100%, 460px);
+      }
+      .foto-wrap img.foto {
+        width: 100%;
+        display: block;
+        border-radius: 42% 48% 46% 44% / 44% 42% 48% 46%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1.05;
+      }
+      .enso {
+        position: absolute;
+        inset: -4% -3% -6% -5%;
+        pointer-events: none;
+      }
+      .groep {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 1.8rem 2.2rem;
+        align-items: center;
+        padding: 2.2rem 0 0.5rem;
+      }
+      .groep-beeld {
+        width: 100%;
+        border-radius: 1.4rem;
+        display: block;
+      }
+      .groep h2 {
+        margin: 0 0 0.45rem;
+        font-family: var(--serif);
+        font-weight: 560;
+        font-size: clamp(2rem, 3.8vw, 2.85rem);
+        letter-spacing: -0.035em;
+        line-height: 1.05;
+        max-width: 12ch;
+      }
+      .groep .wenk { margin-bottom: 0.7rem; }
+      .groep p {
+        margin: 0 0 1.1rem;
+        color: var(--gedempt);
+        max-width: 36ch;
+      }
+      .versie {
+        margin-top: 2.5rem;
+        color: var(--gedempt);
+        font-size: 0.88rem;
+      }
+      @media (max-width: 860px) {
+        .held, .groep { grid-template-columns: 1fr; }
+        .foto-wrap { justify-self: stretch; width: min(100%, 420px); margin: 0 auto; }
+        h1 { max-width: none; }
+        nav { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="blad">
+      <p class="noot">
+        <strong>v30 doorontwikkeling</strong> van
+        <code>website-voorpagina-met-poppetjes-v29.png</code>.
+        Zelfde stijlwereld; één homepage i.p.v. twee posters; één hoofdknoop;
+        poppetjes blijven, maar lager in de hiërarchie.
+      </p>
+
+      <header class="kop">
+        <a class="merk" href="#">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path
+              fill="#00706e"
+              d="M18 10c8-8 28-6 34 8 4 10 0 24-10 30-8 5-20 4-27-4-8-9-6-26 3-34z"
+            />
+            <circle cx="34" cy="30" r="10" fill="#f6eedf" />
+            <circle cx="30" cy="28" r="1.6" fill="#00706e" />
+            <circle cx="38" cy="28" r="1.6" fill="#00706e" />
+            <path d="M29 35c2.2 2.4 7.8 2.4 10 0" fill="none" stroke="#00706e" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          Gestalt Nu
+        </a>
+        <nav aria-label="Hoofdmenu">
+          <a href="#">Bewustwordingsgroep</a>
+          <a href="#">Coaching</a>
+          <a href="#">Ademwerk</a>
+          <a href="#">Over Jeroen</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="held" aria-label="Hero">
+        <div>
+          <p class="wenk">een cirkel van 8 · vijf vrijdagochtenden</p>
+          <h1>Kijk met andere ogen</h1>
+          <p class="lede">
+            Adem, lichaam en gesprek. Samen met zeven anderen ontdek je wat er
+            nú in je speelt. Vanaf 8 januari 2027 in Rotterdam.
+          </p>
+          <div class="acties">
+            <a
+              class="knop knop--whatsapp"
+              href="https://wa.me/31644008880?text=Hoi%20Jeroen%2C%20ik%20wil%20graag%20kennismaken."
+              >Stuur een WhatsApp</a
+            >
+            <a class="meer" href="#contact">Andere manieren</a>
+          </div>
+        </div>
+        <div class="foto-wrap">
+          <img
+            class="foto"
+            src="../vrouwen-ogen-mond-sam-mcnamara.jpg"
+            alt="Twee vrouwen in het gras, handen voor de ogen."
+          />
+          <svg class="enso" viewBox="0 0 460 480" aria-hidden="true">
+            <path
+              d="M70 250c8-120 110-210 230-205s195 115 175 235-140 195-255 170S55 360 70 250"
+              fill="none"
+              stroke="#00a8a5"
+              stroke-width="10"
+              stroke-linecap="round"
+              opacity="0.85"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <section class="groep" aria-label="Groep">
+        <img
+          class="groep-beeld"
+          src="therapiegroep-doodle-v13-huisstijlcreme.png"
+          alt="Vijf getekende poppetjes in een kring: pak, tutu, therapeut, mummie en masker."
+        />
+        <div>
+          <h2>Hier mag je zijn wie je bent</h2>
+          <p class="wenk">in je pak, je tutu of je masker</p>
+          <p>
+            Coaching, ademwerk en een groep in Rotterdam. Je hoeft het niet
+            alleen te doen. Alles mag er zijn.
+          </p>
+          <a class="meer" href="#contact">App me even</a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-label="Contact">
+        <h2>Zeg hallo</h2>
+        <p class="wenk">WhatsApp ziet hij altijd</p>
+        <div class="contact-acties">
+          <a
+            class="knop knop--whatsapp"
+            href="https://wa.me/31644008880?text=Hoi%20Jeroen%2C%20ik%20wil%20graag%20kennismaken."
+            >WhatsApp · 06 44 00 88 80</a
+          >
+        </div>
+        <ul class="contact-lijst">
+          <li>
+            Mail:
+            <a href="mailto:info@gestaltnu.nl">info@gestaltnu.nl</a>
+          </li>
+          <li>
+            Bel:
+            <a href="tel:+31644008880">06 44 00 88 80</a>
+          </li>
+        </ul>
+      </section>
+
+      <p class="versie">
+        Contactgegevens uit <code>site/llms.txt</code>. WhatsApp is de hoofdingang.
+      </p>
+    </main>
+  </body>
+</html>

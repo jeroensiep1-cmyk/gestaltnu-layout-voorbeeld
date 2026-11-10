@@ -1,0 +1,12 @@
+VAST PUNT — goed-2026-11-04-logo-hand
+
+Map: checkpoints\goed-2026-11-04-logo-hand
+Afspraak 4 november 2026 (ochtend, logo-hand):
+
+- Binnenpagina’s (gesprekken, bewustwordingsgroep, ademwerk, mindfulness, over/contact):
+  header-logo = beelden/logo-hand.png (aangeleverd hand-logo, witte achtergrond → transparant)
+  ernaast HTML-tekst: <span>Gestalt Nu</span> in .merk-serifstijl
+  geen kutstipje uit logo-home; geen witte plaat achter het logo
+- Homepage: hero voorpagina-origineel ongewijzigd in deze ronde; header zonder logo-img (merk--hit)
+- Kolom 1100px, menu zonder Coaching, menu-offset 0.7rem op subpagina’s
+- Live: niet aangeraakt

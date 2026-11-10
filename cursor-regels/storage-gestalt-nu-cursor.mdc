@@ -1,0 +1,28 @@
+---
+description: ALLES voor Gestalt Nu naar Gestalt Nu Cursor op het bureaublad; Cursor-regels ook als kopie/overzicht daar
+alwaysApply: true
+---
+
+# Opslag — Gestalt Nu Cursor (één plek)
+
+**ALLES** wat met het Gestalt Nu-project te maken heeft komt hier:
+
+`C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor`
+
+Jeroen moet daar **direct** in kunnen zonder te zoeken. Gebruik de juiste submap (`afbeeldingen`, `marketing`, `nieuwe website`, of andere projectmappen die hij heeft aangemaakt).
+
+## Hard
+
+- Niets los op het bureaublad (behalve de map Gestalt Nu Cursor zelf).
+- Map Gestalt Nu Cursor niet hernoemen, verplaatsen of legen zonder expliciete ja.
+- Canonieke live site-code blijft technisch in `gestaltnu-layout-voorbeeld\site` (Cursor kan die daar blijven lezen/bewerken na toestemming). Output, notities, overzichten, afbeeldingen, marketing, scripts-kopieën, enz. → **altijd** naar Gestalt Nu Cursor.
+
+## Cursor-regels: technisch + zichtbaar voor Jeroen
+
+- De werkende Cursor-regels mogen technisch blijven staan in:
+  `gestaltnu-layout-voorbeeld\.cursor\rules\`
+- Er moet **altijd** een duidelijke **kopie of overzicht** van die regels staan in Gestalt Nu Cursor, zodat Jeroen alles op één plek ziet, bijvoorbeeld:
+  `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\cursor-regels\`
+- Bij wijziging van een regel in `.cursor\rules\`: werk de kopie/het overzicht in Gestalt Nu Cursor **in dezelfde beurt** bij.
+
+Zie ook **AGENTS.md** §0 en `altijd-doorgaan.mdc`.

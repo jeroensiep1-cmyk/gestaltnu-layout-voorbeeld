@@ -1,0 +1,495 @@
+:root {
+  --paper: #f3eee6;
+  --paper-2: #e8e1d4;
+  --ink: #231e1a;
+  --muted: #5e564c;
+  --line: #ddd4c6;
+  --terra: #a3432a;
+  --terra-d: #7c301c;
+  --white: #faf7f2;
+  --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+  --sans: Outfit, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--terra);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: white;
+  padding: 0.5rem 0.8rem;
+  z-index: 5;
+}
+
+.skip:focus {
+  top: 0.6rem;
+}
+
+.proef {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.45rem 1.2rem;
+  font-size: 0.84rem;
+}
+
+.proef p {
+  margin: 0;
+}
+
+.proef a {
+  text-underline-offset: 0.18em;
+}
+
+.wrap {
+  width: min(1120px, calc(100% - 2.4rem));
+  margin-inline: auto;
+}
+
+.kop {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.05rem 0 0.4rem;
+}
+
+.merk {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-size: 1.12rem;
+}
+
+.merk svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.kop nav {
+  display: flex;
+  gap: 1.15rem;
+  margin-left: auto;
+}
+
+.kop nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.kop nav a[aria-current="page"],
+.kop nav a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.32em;
+}
+
+.knop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1.15rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.knop.klein {
+  padding: 0.55rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.knop.licht {
+  background: transparent;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+
+.knop:hover {
+  background: var(--terra-d);
+  color: white;
+}
+
+.knop.licht:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+h1,
+h2,
+.pad strong,
+.citaat p {
+  font-family: var(--serif);
+  font-weight: 560;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+
+h1 {
+  margin: 0.2rem 0 0;
+  font-size: clamp(2.35rem, 5.4vw, 5.2rem);
+  max-width: 12em;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+}
+
+.kicker {
+  margin: 1.4rem 0 0;
+  color: var(--terra-d);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lees {
+  max-width: 62ch;
+}
+
+.intro {
+  font-size: 1.18rem;
+  max-width: 38ch;
+}
+
+.hero {
+  padding: 0.4rem 0 2.6rem;
+}
+
+.hero-grid,
+.twee,
+.paden,
+.quotes,
+.formulier-grid {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.hero-grid {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: end;
+  margin-top: 1.4rem;
+}
+
+.acties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.2rem 0 0.8rem;
+}
+
+.datum {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tekening {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.2rem;
+  background: var(--paper-2);
+  box-shadow: 0 18px 40px rgba(35, 30, 26, 0.08);
+}
+
+figcaption {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.blok {
+  padding: 3.6rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.paden {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pad {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-height: 100%;
+  padding: 1.25rem 1.2rem 1.35rem;
+  background: var(--white);
+  border-radius: 1.15rem;
+  text-decoration: none;
+}
+
+.pad:hover {
+  background: white;
+}
+
+.pad strong {
+  font-size: 1.85rem;
+}
+
+.pad p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.pad span {
+  margin-top: auto;
+  color: var(--terra-d);
+}
+
+.twee {
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.twee.top {
+  align-items: start;
+}
+
+.citaat {
+  margin: 0;
+  padding: 2.2rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.citaat p {
+  margin: 0;
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  max-width: 16ch;
+}
+
+.quotes {
+  grid-template-columns: 1fr 1fr;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 2px solid var(--terra);
+}
+
+blockquote p {
+  margin: 0 0 0.7rem;
+  font-size: 1.12rem;
+}
+
+blockquote footer {
+  color: var(--muted);
+}
+
+.feiten,
+.praktisch dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0;
+}
+
+.feiten dt,
+.praktisch dt {
+  color: var(--muted);
+}
+
+.feiten dd,
+.praktisch dd {
+  margin: 0;
+}
+
+.rij {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.rij:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.rij strong {
+  font-size: 1.25rem;
+}
+
+.rij span,
+.prijs {
+  color: var(--muted);
+}
+
+.paginakop {
+  padding: 1.6rem 0 1rem;
+}
+
+.paginakop h1 {
+  font-size: clamp(2.7rem, 6vw, 4.6rem);
+  max-width: 14ch;
+}
+
+.lijst {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.lijst li + li {
+  margin-top: 0.35rem;
+}
+
+.kaart {
+  background: var(--white);
+  border-radius: 1.15rem;
+  padding: 1.3rem 1.25rem 1.4rem;
+}
+
+.kaart h2 {
+  font-size: 2rem;
+}
+
+.na {
+  margin-top: 2rem;
+}
+
+.kaart.na {
+  margin-top: 1rem;
+}
+
+details {
+  border-top: 1px solid var(--line);
+  padding: 0.85rem 0;
+}
+
+details:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.75rem;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.voet {
+  padding: 1.4rem 0 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.voet .wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.voet a {
+  color: var(--ink);
+}
+
+address {
+  font-style: normal;
+}
+
+@media (max-width: 860px) {
+  .kop {
+    flex-wrap: wrap;
+  }
+
+  .kop nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hero-grid,
+  .twee,
+  .paden,
+  .quotes,
+  .formulier-grid,
+  .rij {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

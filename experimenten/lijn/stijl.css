@@ -1,0 +1,455 @@
+:root {
+  --paper: #f4f1ea;
+  --ink: #161814;
+  --muted: #5c584f;
+  --line: #d9d3c6;
+  --moss: #1e4a38;
+  --moss-soft: #e4eee8;
+  --white: #fffcf7;
+  --serif: Newsreader, "Iowan Old Style", Palatino, Georgia, serif;
+  --sans: Manrope, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--moss);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: white;
+  padding: 0.5rem 0.8rem;
+  z-index: 6;
+}
+
+.skip:focus {
+  top: 0.6rem;
+}
+
+.proef {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.45rem 1.2rem;
+  font-size: 0.84rem;
+}
+
+.proef p {
+  margin: 0;
+}
+
+.wrap {
+  width: min(1080px, calc(100% - 2.2rem));
+  margin-inline: auto;
+}
+
+.kop-balk {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.kop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+.merk {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.merk svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.kop nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  font-size: 0.95rem;
+}
+
+.kop nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.kop nav a:hover {
+  color: var(--ink);
+}
+
+.knop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--moss);
+  color: white;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.knop.klein {
+  padding: 0.48rem 0.75rem;
+  font-size: 0.92rem;
+}
+
+.knop.licht {
+  background: transparent;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+
+.knop:hover {
+  background: var(--ink);
+}
+
+.knop.licht:hover {
+  color: white;
+}
+
+h1,
+h2 {
+  font-family: var(--serif);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.7rem, 5.6vw, 4.8rem);
+  max-width: 14ch;
+}
+
+h2 {
+  margin: 0 0 0.7rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.kicker {
+  margin: 0 0 0.7rem;
+  color: var(--moss);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2rem;
+  align-items: end;
+  padding: 1.6rem 0 1.4rem;
+}
+
+.intro {
+  font-size: 1.12rem;
+  max-width: 42ch;
+}
+
+.acties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.feiten {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 1rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
+
+.feiten div {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.feiten dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.feiten dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.tekening {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.45rem;
+}
+
+.band {
+  padding-bottom: 2.2rem;
+}
+
+figcaption,
+.zacht {
+  color: var(--muted);
+}
+
+.blok {
+  padding: 2.8rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.koppen {
+  scroll-margin-top: 4.5rem;
+}
+
+.diensten {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.dienst {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem 1rem 1.1rem;
+  background: var(--white);
+  border-radius: 0.45rem;
+  text-decoration: none;
+  border: 1px solid var(--line);
+}
+
+.dienst:hover {
+  border-color: var(--moss);
+}
+
+.dienst b {
+  font-size: 1.25rem;
+  letter-spacing: -0.03em;
+}
+
+.dienst p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.nr {
+  color: var(--moss);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.twee {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1.6rem;
+  align-items: start;
+}
+
+.ruimte {
+  margin-top: 1.4rem;
+}
+
+.praktisch {
+  background: var(--moss-soft);
+  border-radius: 0.45rem;
+  padding: 1rem 1rem 1.1rem;
+}
+
+.praktisch dl {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0.4rem 0.8rem;
+  margin: 0 0 1rem;
+}
+
+.praktisch dd {
+  margin: 0;
+}
+
+.training {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.training:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.prijs {
+  font-weight: 700;
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 0.45rem;
+}
+
+blockquote p {
+  margin: 0 0 0.7rem;
+}
+
+blockquote footer {
+  color: var(--muted);
+}
+
+details {
+  border-top: 1px solid var(--line);
+  padding: 0.8rem 0;
+}
+
+details:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  display: grid;
+  gap: 0.28rem;
+  font-size: 0.92rem;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  padding: 0.65rem 0.7rem;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+address {
+  font-style: normal;
+}
+
+.voet {
+  padding: 1.2rem 0 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.voet .wrap,
+.voet-rij {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.voet a {
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .kop-balk {
+    position: static;
+  }
+
+  .kop {
+    flex-wrap: wrap;
+  }
+
+  .kop nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hero,
+  .diensten,
+  .twee,
+  .quotes,
+  .training {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

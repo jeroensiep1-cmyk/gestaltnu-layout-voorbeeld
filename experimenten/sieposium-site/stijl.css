@@ -1,0 +1,348 @@
+:root {
+  color-scheme: light;
+  --papier: #fbf7f2;
+  --inkt: #1c1c1c;
+  --zacht: #5c564e;
+  --lijn: #e4ddd4;
+  --sans: Figtree, "Segoe UI", sans-serif;
+  --serif: Fraunces, Palatino, Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html { overflow-x: clip; }
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--inkt);
+  font-family: var(--sans);
+  line-height: 1.5;
+  padding-bottom: calc(4.6rem + env(safe-area-inset-bottom));
+}
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--inkt);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: var(--inkt);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  z-index: 6;
+}
+
+.skip:focus { top: 0.6rem; }
+
+.kop {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: var(--papier);
+  border-bottom: 1px solid var(--lijn);
+  padding-top: env(safe-area-inset-top);
+}
+
+.kop-rij {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 1.05rem 1.2rem 0.95rem;
+}
+
+.kop-zoek {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 0.85rem 1.2rem 0.15rem;
+  font-size: clamp(0.82rem, 1.15vw, 1rem);
+}
+
+.kop-zoek span {
+  display: block;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.merk {
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+nav[aria-label="Hoofdmenu"] {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+nav[aria-label="Hoofdmenu"] a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav[aria-label="Hoofdmenu"] a[aria-current="page"],
+nav[aria-label="Hoofdmenu"] a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.knop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-height: 2.8rem;
+  padding: 0.35rem 1.05rem;
+  border-radius: 999px;
+  background: var(--inkt);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.knop:hover { background: #000; }
+
+.kop-tel {
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.held,
+.deuren,
+.zin,
+.voet-grid,
+.voet .klein {
+  width: min(1120px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.held { padding: 2.6rem 1.2rem 0.2rem; }
+
+.held h1,
+.zin h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 520;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+}
+
+.lede {
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  color: var(--zacht);
+  font-size: 1.15rem;
+}
+
+.deuren {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  padding: 1.4rem 1.2rem 0.4rem;
+}
+
+.deur {
+  display: flex;
+  align-items: flex-end;
+  min-height: 18rem;
+  padding: 1.3rem 1.2rem 1.2rem;
+  border: 1px solid var(--lijn);
+  border-radius: 1.4rem;
+  text-decoration: none;
+  background: white;
+}
+
+.deur span { display: grid; gap: 0.2rem; }
+
+.deur small {
+  color: var(--zacht);
+  font-weight: 600;
+}
+
+.deur strong {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 520;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.deur:hover { border-color: var(--inkt); }
+
+.diensten {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 2.2rem 1.2rem 0;
+}
+
+.diensten h2 {
+  margin: 0 0 0.4rem;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 520;
+  letter-spacing: -0.03em;
+}
+
+.diensten p {
+  margin: 0.7rem 0 0;
+  font-size: 1.15rem;
+}
+
+.diensten .etiket {
+  margin: 0.2rem 0 0;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.zin { padding: 1.6rem 1.2rem 0.4rem; }
+
+.zin p { max-width: 38rem; font-size: 1.15rem; }
+
+.zin h2 {
+  margin: 1.6rem 0 0.4rem;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 520;
+  letter-spacing: -0.03em;
+}
+
+.zin h3 {
+  margin: 1.15rem 0 0.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.voet {
+  margin-top: 2.8rem;
+  background: var(--inkt);
+  color: #fbf7f2;
+}
+
+.voet-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem 1.2rem 1.2rem;
+}
+
+.voet h2 {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 560;
+  margin: 0 0 0.5rem;
+}
+
+.voet .groet {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin: 0 0 0.85rem;
+  max-width: 16ch;
+}
+
+.voet a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+.voet a[aria-current="page"] { text-decoration-thickness: 2px; }
+
+.voet ul { list-style: none; margin: 0; padding: 0; }
+
+.voet li { margin: 0.3rem 0; }
+
+.voet address { font-style: normal; }
+
+.voet .klein {
+  padding: 0 1.2rem 1.5rem;
+  color: #c8bfb4;
+  font-size: 0.88rem;
+}
+
+.balk {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background: var(--papier);
+  border-top: 1px solid var(--lijn);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.balk a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 3.4rem;
+  padding: 0.35rem 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--zacht);
+}
+
+.balk a[aria-current="page"] {
+  color: var(--inkt);
+  box-shadow: inset 0 2px 0 var(--inkt);
+}
+
+@media (min-width: 801px) {
+  body { padding-bottom: 0; }
+  .balk { display: none; }
+}
+
+@media (max-width: 800px) {
+  .kop-zoek { flex-wrap: wrap; }
+  .kop-zoek span {
+    flex: 1 1 100%;
+    min-width: 0;
+    white-space: normal;
+  }
+  .kop-rij {
+    flex-wrap: wrap;
+    row-gap: 0.55rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .merk { flex: 1 0 100%; font-size: 1.45rem; }
+  .knop { padding: 0.35rem 0.85rem; }
+  nav[aria-label="Hoofdmenu"] {
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+  }
+  .balk a { font-size: 0.78rem; }
+  .deuren,
+  .diensten,
+  .voet-grid { grid-template-columns: 1fr; }
+  .deur { min-height: 11rem; }
+}

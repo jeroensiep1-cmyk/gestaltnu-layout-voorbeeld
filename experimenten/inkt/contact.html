@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Contact | Gestalt Nu, Rotterdam</title>
+    <meta
+      name="description"
+      content="Maak een afspraak bij Gestalt Nu. App, bel of mail Jeroen Siep. Spiegelnisserkade 184, 3031 VM Rotterdam."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stijl.css" />
+  </head>
+  <body>
+    <a class="skip" href="#inhoud">Naar de inhoud</a>
+    <div class="proef">
+      <p>Voorbeeld. Dit staat nog niet op gestaltnu.nl.</p>
+      <p><a href="../index.html">Alle richtingen</a></p>
+    </div>
+    <header class="wrap kop">
+      <a class="merk" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4.8a11.2 11.2 0 1 1-7.6 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Gestalt Nu
+      </a>
+      <nav>
+        <a href="gesprekken.html">Gesprekken</a>
+        <a href="groep.html">Groep</a>
+        <a href="index.html#trainingen">Trainingen</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a class="knop klein" href="https://wa.me/31644008880?text=Hoi%20Jeroen%2C%20ik%20wil%20graag%20kennismaken.">Stuur een app</a>
+    </header>
+    <main id="inhoud" class="wrap">
+      <header class="paginakop">
+        <p class="kicker">Welkom</p>
+        <h1>Stuur een bericht. Dan kijken we samen.</h1>
+      </header>
+      <div class="formulier-grid twee top">
+        <form id="bericht">
+          <label>Naam
+            <input name="naam" required autocomplete="name" />
+          </label>
+          <label>Telefoon
+            <input name="telefoon" type="tel" autocomplete="tel" />
+          </label>
+          <label>Waar gaat het over
+            <select name="onderwerp">
+              <option>Een gesprek</option>
+              <option>De bewustwordingsgroep</option>
+              <option>Een training</option>
+              <option>Iets anders</option>
+            </select>
+          </label>
+          <label>Bericht
+            <textarea name="tekst" required></textarea>
+          </label>
+          <button class="knop" type="submit">Open een mail</button>
+          <p class="datum">De knop opent je mailprogramma, gericht aan info@gestaltnu.nl. Sneller is de app.</p>
+        </form>
+        <div>
+          <figure>
+            <img class="tekening" src="../tekeningen/kade.jpg" alt="Tekening van een kade in Rotterdam met een bakstenen huis en een fiets." />
+          </figure>
+          <address class="kaart na">
+            <strong>Gestalt Nu</strong><br />
+            Jeroen Siep<br />
+            Spiegelnisserkade 184<br />
+            3031 VM Rotterdam<br /><br />
+            <a href="tel:+31644008880">06 44 00 88 80</a><br />
+            <a href="mailto:info@gestaltnu.nl">info@gestaltnu.nl</a><br />
+            <a href="https://maps.google.com/?q=Spiegelnisserkade+184+Rotterdam">Bekijk op de kaart</a>
+            <p>KvK 63273888 · btw NL002015414B56</p>
+            <p>Betaalgegevens staan op de factuur.</p>
+          </address>
+        </div>
+      </div>
+    </main>
+    <footer class="voet">
+      <div class="wrap">
+        <p>Gestalt Nu · Jeroen Siep</p>
+        <p><a href="https://wa.me/31644008880">Appen</a> is de snelste weg.</p>
+      </div>
+    </footer>
+    <script src="../bericht.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+# Therapie Rotterdam
+
+> Jeroen Siep, Rotterdam. Nog niet gepubliceerd.
+
+Therapie Rotterdam is de naam van de site. Jeroen Siep is geen psychotherapeut en staat niet in het BIG-register.
+
+## Twee deuren
+
+- Therapeut Rotterdam. Een gesprek aan de Spiegelnisserkade. Individueel € 95 tot € 200. Partnergesprek € 130.
+- Praatgroep Rotterdam. Eenzaam voelen terwijl je niet alleen bent. Vijf vrijdagochtenden: 8, 15, 22 en 29 januari 2027, en 5 februari 2027, 9:30 tot ongeveer 12:00. Maximaal negen mensen, Jeroen meegerekend. € 150 voor de reeks, € 30 per keer. Dit is geen behandeling in de GGZ.
+
+## Contact
+
+Spiegelnisserkade 184, 3031 VM Rotterdam.
+Telefoon en WhatsApp: 06 44 00 88 80.
+KvK 63273888.
+Maandag tot vrijdag 8:00 tot 20:00. Zaterdag en zondag 9:00 tot 17:00.
+
+## Pagina's
+
+- index.html
+- mijn-leven.html
+- praatgroep-rotterdam.html

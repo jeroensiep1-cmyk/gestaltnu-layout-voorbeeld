@@ -1,0 +1,30 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+.cursor/
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+__pycache__/
+node_modules/
+.cache/
+
+# Local preview / agent noise
+terminals/
+*.ps1.bak

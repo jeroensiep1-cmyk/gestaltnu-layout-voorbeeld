@@ -1,0 +1,128 @@
+START 2026-11-06T15:19:17.1202140+01:00
+ELEVATED=System.Security.Principal.WindowsPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+SHADOW_COUNT=2
+SHADOW ID={664F5302-6230-4D44-8BD3-C37B2446796E} Device=\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2 InstallDate=6-11-2026 05:33:40 Volume=\\?\Volume{90a64058-16f2-4de2-8c55-a1c075a1a262}\
+SHADOW ID={57D03C72-5D08-4794-9623-6A5BAED64064} Device=\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3 InstallDate=6-11-2026 08:29:55 Volume=\\?\Volume{90a64058-16f2-4de2-8c55-a1c075a1a262}\
+VSSADMIN:
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+(C) Copyright 2001-2013 Microsoft Corp.
+
+Contents of shadow copy set ID: {d9964909-8cc7-4516-ab02-2030d314bd60}
+   Contained 1 shadow copies at creation time: 6-11-2026 05:33:40
+      Shadow Copy ID: {664f5302-6230-4d44-8bd3-c37b2446796e}
+         Original Volume: (C:)\\?\Volume{90a64058-16f2-4de2-8c55-a1c075a1a262}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2
+         Originating Machine: LAPTOP-E8J0PINL
+         Service Machine: LAPTOP-E8J0PINL
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+Contents of shadow copy set ID: {d4746b11-e555-41d1-bec9-27a99bd9e0e7}
+   Contained 1 shadow copies at creation time: 6-11-2026 08:29:55
+      Shadow Copy ID: {57d03c72-5d08-4794-9623-6a5baed64064}
+         Original Volume: (C:)\\?\Volume{90a64058-16f2-4de2-8c55-a1c075a1a262}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3
+         Originating Machine: LAPTOP-E8J0PINL
+         Service Machine: LAPTOP-E8J0PINL
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+
+SCAN \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets
+HIT 2026-11-05 21:19:46 CR | 21:19:46 LW | monnik-koeien-doodle-v2-CLEAN.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-CLEAN.jpg
+HIT 2026-11-05 21:20:24 CR | 21:20:56 LW | monnik-koeien-doodle-v2-DONE.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-DONE.jpg
+HIT 2026-11-05 21:33:51 CR | 21:33:51 LW | monnik-koeien-doodle-v2-doodles-poppetje-raw.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-doodles-poppetje-raw.jpg
+HIT 2026-11-05 21:34:34 CR | 21:34:34 LW | monnik-koeien-doodle-v2-doodles-poppetje-VERIFY.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-doodles-poppetje-VERIFY.jpg
+HIT 2026-11-05 21:27:09 CR | 21:34:34 LW | monnik-koeien-doodle-v2-doodles-poppetje.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-doodles-poppetje.jpg
+HIT 2026-11-05 21:18:57 CR | 21:18:57 LW | monnik-koeien-doodle-v2-FINAL-text.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-FINAL-text.jpg
+HIT 2026-11-05 21:18:21 CR | 21:18:21 LW | monnik-koeien-doodle-v2-ONEPASS.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-ONEPASS.jpg
+HIT 2026-11-05 21:09:16 CR | 21:13:54 LW | monnik-koeien-doodle-v2-raw.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-raw.jpg
+HIT 2026-11-05 21:17:32 CR | 21:17:32 LW | monnik-koeien-doodle-v2-TEXTFIX.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-TEXTFIX.jpg
+HIT 2026-11-05 21:14:50 CR | 21:14:32 LW | monnik-koeien-doodle-v2-VERIFY-maatschappij.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2-VERIFY-maatschappij.jpg
+HIT 2026-11-05 20:57:45 CR | 21:20:55 LW | monnik-koeien-doodle-v2.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\monnik-koeien-doodle-v2.jpg
+HIT 2026-10-28 19:55:23 CR | 19:55:23 LW | poppetjes-drie-groot.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\poppetjes-drie-groot.jpg
+HIT 2026-10-28 19:55:26 CR | 19:55:26 LW | poppetjes-gesprek.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\poppetjes-gesprek.jpg
+HIT 2026-10-28 19:55:21 CR | 19:55:21 LW | poppetjes-rij.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\poppetjes-rij.jpg
+HIT 2026-11-03 15:57:08 CR | 15:57:08 LW | website-voorpagina-met-poppetjes-v29-30144c4f-fe65-4143-b42d-1c1390f741f4.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\website-voorpagina-met-poppetjes-v29-30144c4f-fe65-4143-b42d-1c1390f741f4.jpg
+HIT 2026-11-03 18:24:18 CR | 18:24:18 LW | website-voorpagina-met-poppetjes-v29-36deb97a-1cc9-4488-a347-a2c21d2a670c.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\website-voorpagina-met-poppetjes-v29-36deb97a-1cc9-4488-a347-a2c21d2a670c.jpg
+HIT 2026-11-04 08:10:13 CR | 08:10:13 LW | website-voorpagina-met-poppetjes-v29-3bb62c9e-e533-43cb-b328-571f22f8a4f9.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\website-voorpagina-met-poppetjes-v29-3bb62c9e-e533-43cb-b328-571f22f8a4f9.jpg
+MISS \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen
+SCAN \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN
+HIT 2026-11-05 21:34:31 CR | 21:34:34 LW | monnik-koeien-doodle-v2-doodles-poppetje.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN\monnik-koeien-doodle-v2-doodles-poppetje.png
+HIT 2026-11-03 16:11:19 CR | 16:11:19 LW | monnik-koeien-doodle-v2-voorstel.md | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN\monnik-koeien-doodle-v2-voorstel.md
+HIT 2026-11-05 20:58:02 CR | 21:20:56 LW | monnik-koeien-doodle-v2.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN\monnik-koeien-doodle-v2.jpg
+HIT 2026-11-05 20:58:01 CR | 21:20:56 LW | monnik-koeien-doodle-v2.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN\monnik-koeien-doodle-v2.png
+HIT 2026-11-03 18:20:30 CR | 18:20:10 LW | monnik-koeien-doodle-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN\monnik-koeien-doodle-v2.svg
+HIT 2026-11-03 15:32:18 CR | 09:46:10 LW | website-voorpagina-met-poppetjes-v29.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN\website-voorpagina-met-poppetjes-v29.png
+SCAN \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets
+HIT 2026-10-28 19:55:23 CR | 19:55:23 LW | poppetjes-drie-groot.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\poppetjes-drie-groot.jpg
+HIT 2026-10-28 19:55:26 CR | 19:55:26 LW | poppetjes-gesprek.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\poppetjes-gesprek.jpg
+HIT 2026-10-28 19:55:21 CR | 19:55:21 LW | poppetjes-rij.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\poppetjes-rij.jpg
+HIT 2026-11-03 15:57:08 CR | 15:57:08 LW | website-voorpagina-met-poppetjes-v29-30144c4f-fe65-4143-b42d-1c1390f741f4.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\website-voorpagina-met-poppetjes-v29-30144c4f-fe65-4143-b42d-1c1390f741f4.jpg
+HIT 2026-11-03 18:24:18 CR | 18:24:18 LW | website-voorpagina-met-poppetjes-v29-36deb97a-1cc9-4488-a347-a2c21d2a670c.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\website-voorpagina-met-poppetjes-v29-36deb97a-1cc9-4488-a347-a2c21d2a670c.jpg
+HIT 2026-11-04 08:10:13 CR | 08:10:13 LW | website-voorpagina-met-poppetjes-v29-3bb62c9e-e533-43cb-b328-571f22f8a4f9.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\.cursor\projects\c-Users-jeroe-gestaltnu-layout-voorbeeld\assets\website-voorpagina-met-poppetjes-v29-3bb62c9e-e533-43cb-b328-571f22f8a4f9.jpg
+SCAN \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen
+HIT 2026-11-03 15:32:15 CR | 15:27:56 LW | c-variant-zonder-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\c-variant-zonder-poppetjes.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | checkpoints_goed-2026-11-04-1100_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-1100_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | checkpoints_goed-2026-11-04-1100_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-1100_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | checkpoints_goed-2026-11-04-1100_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-1100_beelden__monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | checkpoints_goed-2026-11-04-b_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-b_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | checkpoints_goed-2026-11-04-b_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-b_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | checkpoints_goed-2026-11-04-b_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-b_beelden__monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | checkpoints_goed-2026-11-04-groep-foto_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-groep-foto_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | checkpoints_goed-2026-11-04-groep-foto_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-groep-foto_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | checkpoints_goed-2026-11-04-groep-foto_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-groep-foto_beelden__monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | checkpoints_goed-2026-11-04-header_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-header_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | checkpoints_goed-2026-11-04-header_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-header_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | checkpoints_goed-2026-11-04-header_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-header_beelden__monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | checkpoints_goed-2026-11-04-logo-hand_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-logo-hand_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | checkpoints_goed-2026-11-04-logo-hand_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-logo-hand_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | checkpoints_goed-2026-11-04-logo-hand_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-logo-hand_beelden__monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | checkpoints_goed-2026-11-04-menu-mindfulness_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-menu-mindfulness_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | checkpoints_goed-2026-11-04-menu-mindfulness_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-menu-mindfulness_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | checkpoints_goed-2026-11-04-menu-mindfulness_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04-menu-mindfulness_beelden__monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | checkpoints_goed-2026-11-04_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | checkpoints_goed-2026-11-04_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | checkpoints_goed-2026-11-04_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_goed-2026-11-04_beelden__monnik-koeien.png
+HIT 2026-11-03 19:50:22 CR | 09:46:10 LW | checkpoints_voorpagina-hersteld_2026-11-03_1950_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_voorpagina-hersteld_2026-11-03_1950_beelden__groep-poppetjes.png
+HIT 2026-11-03 19:50:22 CR | 18:20:10 LW | checkpoints_voorpagina-hersteld_2026-11-03_1950_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_voorpagina-hersteld_2026-11-03_1950_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 19:50:22 CR | 12:02:58 LW | checkpoints_voorpagina-hersteld_2026-11-03_1950_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\checkpoints_voorpagina-hersteld_2026-11-03_1950_beelden__monnik-koeien.png
+HIT 2026-10-29 10:24:44 CR | 12:29:29 LW | deur-poppetje.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\deur-poppetje.png
+HIT 2026-11-03 15:32:14 CR | 09:53:22 LW | gestalt-nu-Grok_stijlen_Stijlreferentie__monnik-koeien-doodle-jeroen-chat-versie.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\gestalt-nu-Grok_stijlen_Stijlreferentie__monnik-koeien-doodle-jeroen-chat-versie.png
+HIT 2026-11-03 15:32:14 CR | 09:53:20 LW | gestalt-nu-Grok_stijlen_Stijlreferentie__monnik-koeien-doodle-profiel-b.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\gestalt-nu-Grok_stijlen_Stijlreferentie__monnik-koeien-doodle-profiel-b.png
+HIT 2026-11-03 15:32:14 CR | 09:53:20 LW | gestalt-nu-Grok_stijlen_Stijlreferentie__monnik-koeien-doodle-voorkant-REFERENTIE.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\gestalt-nu-Grok_stijlen_Stijlreferentie__monnik-koeien-doodle-voorkant-REFERENTIE.png
+HIT 2026-11-03 15:32:14 CR | 09:46:10 LW | gestalt-nu-Grok_stijlen_Stijlreferentie__website-voorpagina-met-poppetjes-v29.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\gestalt-nu-Grok_stijlen_Stijlreferentie__website-voorpagina-met-poppetjes-v29.png
+HIT 2026-11-03 15:32:18 CR | 09:46:10 LW | gestalt-nu-Grok_WELKE_KANT_WE_OP_GAAN__website-voorpagina-met-poppetjes-v29.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\gestalt-nu-Grok_WELKE_KANT_WE_OP_GAAN__website-voorpagina-met-poppetjes-v29.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\groep-poppetjes.png
+HIT 2026-11-03 15:32:13 CR | 09:53:22 LW | monnik-koeien-doodle-jeroen-chat-versie.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-jeroen-chat-versie.png
+HIT 2026-11-03 15:32:13 CR | 09:53:20 LW | monnik-koeien-doodle-profiel-b.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-profiel-b.png
+HIT 2026-11-05 21:19:46 CR | 21:19:46 LW | monnik-koeien-doodle-v2-CLEAN.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-CLEAN.jpg
+HIT 2026-11-05 21:20:24 CR | 21:20:56 LW | monnik-koeien-doodle-v2-DONE.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-DONE.jpg
+HIT 2026-11-05 21:33:51 CR | 21:33:51 LW | monnik-koeien-doodle-v2-doodles-poppetje-raw.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-doodles-poppetje-raw.jpg
+HIT 2026-11-05 21:34:34 CR | 21:34:34 LW | monnik-koeien-doodle-v2-doodles-poppetje-VERIFY.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-doodles-poppetje-VERIFY.jpg
+HIT 2026-11-05 21:27:09 CR | 21:34:34 LW | monnik-koeien-doodle-v2-doodles-poppetje.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-doodles-poppetje.jpg
+HIT 2026-11-05 21:34:31 CR | 21:34:34 LW | monnik-koeien-doodle-v2-doodles-poppetje.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-doodles-poppetje.png
+HIT 2026-11-05 21:18:57 CR | 21:18:57 LW | monnik-koeien-doodle-v2-FINAL-text.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-FINAL-text.jpg
+HIT 2026-11-05 21:18:21 CR | 21:18:21 LW | monnik-koeien-doodle-v2-ONEPASS.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-ONEPASS.jpg
+HIT 2026-11-05 21:09:16 CR | 21:13:54 LW | monnik-koeien-doodle-v2-raw.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-raw.jpg
+HIT 2026-11-05 21:17:32 CR | 21:17:32 LW | monnik-koeien-doodle-v2-TEXTFIX.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-TEXTFIX.jpg
+HIT 2026-11-05 21:14:50 CR | 21:14:32 LW | monnik-koeien-doodle-v2-VERIFY-maatschappij.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2-VERIFY-maatschappij.jpg
+HIT 2026-11-05 20:58:02 CR | 21:20:56 LW | monnik-koeien-doodle-v2.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2.jpg
+HIT 2026-11-05 20:58:01 CR | 21:20:56 LW | monnik-koeien-doodle-v2.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2.png
+HIT 2026-11-03 18:20:30 CR | 18:20:10 LW | monnik-koeien-doodle-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2.svg
+HIT 2026-11-05 20:57:45 CR | 21:20:55 LW | monnik-koeien-doodle-v2__from-cursor-assets.jpg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-v2__from-cursor-assets.jpg
+HIT 2026-11-03 15:32:13 CR | 09:53:20 LW | monnik-koeien-doodle-voorkant-REFERENTIE.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-doodle-voorkant-REFERENTIE.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | onderzoek_menu-voorstel-voorpagina_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\onderzoek_menu-voorstel-voorpagina_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | onderzoek_menu-voorstel-voorpagina_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\onderzoek_menu-voorstel-voorpagina_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | onderzoek_menu-voorstel-voorpagina_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\onderzoek_menu-voorstel-voorpagina_beelden__monnik-koeien.png
+HIT 2026-11-03 18:17:06 CR | 09:46:10 LW | site_beelden__groep-poppetjes.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\site_beelden__groep-poppetjes.png
+HIT 2026-11-03 18:20:10 CR | 18:20:10 LW | site_beelden__monnik-koeien-v2.svg | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\site_beelden__monnik-koeien-v2.svg
+HIT 2026-11-03 18:17:06 CR | 12:02:58 LW | site_beelden__monnik-koeien.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\site_beelden__monnik-koeien.png
+HIT 2026-11-03 15:32:14 CR | 09:46:10 LW | website-voorpagina-met-poppetjes-v29.png | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\afbeeldingen\website-voorpagina-met-poppetjes-v29.png
+SCAN \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN
+HIT 2026-11-03 16:11:19 CR | 16:11:19 LW | monnik-koeien-doodle-v2-voorstel.md | \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Users\jeroe\gestaltnu-layout-voorbeeld\gestalt-nu-Grok\WELKE KANT WE OP GAAN\monnik-koeien-doodle-v2-voorstel.md
+END 2026-11-06T15:19:18.6314042+01:00

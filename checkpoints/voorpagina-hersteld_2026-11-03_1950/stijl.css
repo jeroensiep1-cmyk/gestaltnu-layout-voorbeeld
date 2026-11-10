@@ -1,0 +1,546 @@
+:root {
+  color-scheme: light;
+  --creme: #f6eedf;
+  --inkt: #2a231c;
+  --gedempt: #5e564c;
+  --lijn: rgba(42, 35, 28, 0.12);
+  --teal: #0f6e6e;
+  --teal-donker: #0b5555;
+  --terracotta: #c45c3e;
+  --serif: Fraunces, Palatino, Georgia, serif;
+  --hand: Caveat, "Segoe Print", cursive;
+  --sans: Outfit, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { overflow-x: clip; scroll-behavior: smooth; }
+
+html,
+body {
+  margin: 0;
+  background: var(--creme);
+  background-image: none;
+  color: var(--inkt);
+  font-family: var(--sans);
+  line-height: 1.5;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: var(--inkt);
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  z-index: 5;
+}
+
+.skip:focus { top: 0.6rem; }
+
+.blad {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+/* —— Header —— */
+.kop {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem 1.1rem;
+  padding: 0.85rem 0 1.2rem;
+  background: color-mix(in srgb, var(--creme) 92%, white);
+  border-bottom: none;
+  backdrop-filter: blur(8px);
+}
+
+.kop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.1rem;
+  height: 0.75rem;
+  pointer-events: none;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1100 18' preserveAspectRatio='none'%3E%3Cpath d='M2 11c80-8 160-10 240-6 90 4 170 12 260 8 95-4 180-14 270-10 70 3 140 10 210 6 40-2 80-6 116-4' fill='none' stroke='%230f6e6e' stroke-width='5.5' stroke-linecap='round' opacity='0.92'/%3E%3Cpath d='M4 12c85-6 155-9 235-5 95 5 165 11 255 7 100-4 175-13 265-9 65 3 135 9 205 5 38-2 78-5 112-3' fill='none' stroke='%230f6e6e' stroke-width='2.2' stroke-linecap='round' opacity='0.45'/%3E%3C/svg%3E")
+    left center / 100% 100% no-repeat;
+}
+
+.merk {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+}
+
+.merk svg {
+  width: 2.15rem;
+  height: 2.15rem;
+  flex: none;
+}
+
+.menu-knop {
+  display: none;
+  min-height: 2.7rem;
+  padding: 0 0.95rem;
+  border: 1px solid var(--inkt);
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem 1.15rem;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--gedempt);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+#menu a:hover,
+#menu a[aria-current="page"] {
+  color: var(--teal);
+}
+
+#menu a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.kop-app {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.7rem;
+  padding: 0.35rem 1rem;
+  border-radius: 0.55rem 0.85rem 0.5rem 0.95rem;
+  background: var(--teal);
+  color: #f8f4ec;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.kop-app:hover { background: var(--teal-donker); }
+
+@media (max-width: 900px) {
+  .menu-knop { display: inline-flex; align-items: center; }
+  #menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.4rem 1rem 1rem;
+    background: var(--creme);
+    border-bottom: 1px solid var(--lijn);
+  }
+  #menu.open { display: flex; }
+  #menu a {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--lijn);
+  }
+}
+
+/* —— Typografie & knoppen —— */
+.wenk {
+  margin: 0 0 0.55rem;
+  font-family: var(--hand);
+  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+  color: var(--teal);
+  line-height: 1.15;
+}
+
+h1 {
+  margin: 0 0 0.85rem;
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+h2 {
+  margin: 0 0 0.6rem;
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.lede {
+  margin: 0 0 1.3rem;
+  max-width: 38ch;
+  color: var(--gedempt);
+  font-size: 1.06rem;
+}
+
+.knop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.85rem;
+  padding: 0.45rem 1.2rem;
+  background: var(--teal);
+  color: #f8f4ec;
+  text-decoration: none;
+  border-radius: 0.55rem 0.85rem 0.5rem 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(15, 110, 110, 0.16);
+}
+
+.knop:hover { background: var(--teal-donker); }
+
+.meer {
+  color: var(--inkt);
+  text-decoration: none;
+  border-bottom: 2px solid var(--terracotta);
+  padding-bottom: 0.05rem;
+  font-weight: 500;
+}
+
+.acties {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 1.2rem;
+}
+
+/* —— Home sections —— */
+main { padding-bottom: 3rem; }
+
+.held {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2rem 2.4rem;
+  align-items: center;
+  padding: 1.6rem 0 2.6rem;
+}
+
+.held h1 { max-width: 11ch; }
+
+.foto-wrap {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 520px);
+}
+
+.foto-wrap .foto {
+  width: 100%;
+  height: auto;
+}
+
+/* Voorpagina: één doorlopend beeld — logo, streep, cirkel, foto, tekst */
+body.voorpagina,
+html:has(body.voorpagina) {
+  /* egale crème tot in de hoeken — geen gradient-balk links/boven */
+  background: var(--creme);
+  background-image: none;
+}
+
+.voorpagina .blad {
+  padding-top: 0;
+}
+
+.voorpagina-toneel {
+  position: relative;
+  margin: 0 0 1.6rem;
+  line-height: 0;
+}
+
+.voorpagina-beeld {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.voorpagina .kop--over {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem 1.1rem;
+  /* zelfde hoogte als logo + naam in het beeld */
+  height: 4.6rem;
+  padding: 0 0.35rem;
+  margin: 0;
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  line-height: normal;
+}
+
+.voorpagina .kop--over::after {
+  display: none;
+}
+
+.voorpagina .merk--hit {
+  margin: 0 auto 0 0;
+  width: min(42%, 20rem);
+  height: 100%;
+  flex: none;
+  align-self: stretch;
+}
+
+.voorpagina .menu-knop,
+.voorpagina #menu,
+.voorpagina .kop-app {
+  margin: 0;
+  align-self: center;
+}
+
+.voorpagina #menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+  gap: 0 1.2rem;
+  line-height: 1;
+}
+
+.voorpagina #menu a {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.voorpagina .kop-app {
+  margin-right: 0.35rem;
+  min-height: 2.2rem;
+  height: 2.2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.voorpagina .held-plek {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 120%;
+  line-height: normal;
+}
+
+.voorpagina .held-plek--aan {
+  left: 4.6%;
+  top: 68%;
+  width: 14%;
+  height: 7%;
+}
+
+.voorpagina .held-plek--meer {
+  left: 20%;
+  top: 69.5%;
+  width: 9%;
+  height: 5%;
+}
+
+.voorpagina .visueel-verborgen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.groep-blok {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.6rem 2.2rem;
+  align-items: center;
+  padding: 1.2rem 0 2.4rem;
+}
+
+.groep-beeld {
+  width: 100%;
+  border-radius: 1.35rem;
+}
+
+.deuren {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0.5rem 0 2rem;
+}
+
+.deur {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.15rem 1.1rem;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--lijn);
+  border-radius: 1.1rem;
+}
+
+.deur small {
+  color: var(--gedempt);
+  font-size: 0.88rem;
+}
+
+.deur strong {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.deur:hover { border-color: var(--teal); }
+
+/* —— Binnenpagina’s —— */
+.pagina {
+  padding: 1.8rem 0 1rem;
+  max-width: 42rem;
+}
+
+.pagina .lede { max-width: 48ch; }
+
+.lijst {
+  margin: 0 0 1.4rem;
+  padding-left: 1.15rem;
+  color: var(--gedempt);
+}
+
+.lijst li { margin: 0.35rem 0; }
+
+.kaart {
+  margin: 1.4rem 0;
+  padding: 1.1rem 1.15rem;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--lijn);
+  border-radius: 1rem;
+}
+
+.kaart h2 { font-size: 1.35rem; }
+
+.faq details {
+  margin: 0.55rem 0;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--lijn);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq p {
+  margin: 0.55rem 0 0;
+  color: var(--gedempt);
+}
+
+.monnik-kaart {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.6rem 0;
+  max-width: 28rem;
+}
+
+.monnik-kaart img {
+  width: 100%;
+  border-radius: 1.2rem;
+  border: 1px solid var(--lijn);
+}
+
+.monnik-kaart figcaption {
+  color: var(--gedempt);
+  font-size: 0.95rem;
+}
+
+/* —— Footer —— */
+.voet {
+  border-top: 1px solid var(--lijn);
+  padding: 2.2rem 0 2.6rem;
+  margin-top: 1rem;
+}
+
+.voet-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.voet h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.55rem;
+}
+
+.voet address {
+  font-style: normal;
+  color: var(--gedempt);
+  line-height: 1.65;
+}
+
+.voet ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.voet li { margin: 0.35rem 0; }
+
+.voet a { text-decoration: none; }
+
+.voet a:hover { color: var(--teal); }
+
+.voet .klein {
+  margin: 1.4rem 0 0;
+  color: var(--gedempt);
+  font-size: 0.92rem;
+  max-width: 62ch;
+}
+
+@media (max-width: 860px) {
+  .held,
+  .groep-blok,
+  .voet-grid,
+  .deuren {
+    grid-template-columns: 1fr;
+  }
+
+  .foto-wrap {
+    justify-self: stretch;
+    width: min(100%, 420px);
+    margin: 0 auto;
+  }
+
+  .held h1 { max-width: none; }
+}

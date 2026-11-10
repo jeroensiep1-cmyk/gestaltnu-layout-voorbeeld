@@ -1,0 +1,277 @@
+:root {
+  --paper: #f4f0e8;
+  --ink: #1c1916;
+  --muted: #5e574e;
+  --line: #e3dbd0;
+  --card: #fbf8f3;
+  --accent: #8a3e2a;
+  --serif: Newsreader, Palatino, Georgia, serif;
+  --sans: Outfit, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+a:visited { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: white;
+  padding: 0.45rem 0.7rem;
+}
+
+.skip:focus { top: 0.5rem; z-index: 5; }
+
+.proef {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.84rem;
+  padding: 0.45rem 1.2rem;
+}
+
+.proef p { margin: 0; }
+.proef a { color: var(--paper); }
+
+.wrap {
+  width: min(1100px, calc(100% - 2.2rem));
+  margin-inline: auto;
+}
+
+.kop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 0.4rem;
+}
+
+.merk {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.kop nav {
+  display: flex;
+  gap: 1.1rem;
+  margin-left: auto;
+}
+
+.kop nav a { text-decoration: none; color: var(--muted); }
+.kop nav a[aria-current="page"],
+.kop nav a:hover { color: var(--ink); }
+
+.knop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.75rem 1.05rem;
+  font: inherit;
+  font-weight: 560;
+  cursor: pointer;
+}
+
+.knop.licht {
+  background: transparent;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+
+.knop.klein { padding: 0.48rem 0.8rem; font-size: 0.95rem; }
+.knop:hover { background: var(--accent); color: white; }
+.knop.licht:hover { background: var(--ink); color: var(--paper); }
+
+h1, h2, .deur h2 {
+  font-family: var(--serif);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+h1 {
+  margin: 0.2rem 0 0.8rem;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  max-width: 16ch;
+}
+
+h2 { margin: 0 0 0.7rem; font-size: clamp(1.8rem, 3vw, 2.6rem); }
+
+.kicker {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.held {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 2.4rem;
+  align-items: end;
+  padding: 1.2rem 0 2.6rem;
+}
+
+.held p.lees { font-size: 1.15rem; max-width: 38ch; }
+
+.acties { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
+
+.foto {
+  margin: 0;
+  min-width: 0;
+}
+
+.foto img {
+  width: 100%;
+  height: min(68vh, 620px);
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 1.2rem;
+  background: #ddd4c6;
+}
+
+.foto figcaption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.deuren, .zes, .twee {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.deuren { grid-template-columns: 1fr 1fr; padding-bottom: 2.5rem; }
+
+.deur, .kaart, .tegel {
+  min-width: 0;
+  background: var(--card);
+  border-radius: 1.1rem;
+  padding: 1.15rem 1.15rem 1.25rem;
+  text-decoration: none;
+}
+
+.deur h2 { font-size: 2rem; }
+.deur p, .tegel p { margin: 0.35rem 0 0; color: var(--muted); }
+.deur span { display: inline-block; margin-top: 0.9rem; color: var(--accent); }
+
+.blok { padding: 2.4rem 0; border-top: 1px solid var(--line); }
+
+.twee {
+  grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.lees { max-width: 62ch; }
+
+.zes { grid-template-columns: 1fr 1fr 1fr; }
+
+.tegel h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.praktisch dl {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.45rem 0.8rem;
+  margin: 0 0 1rem;
+}
+
+.praktisch dt { color: var(--muted); }
+.praktisch dd { margin: 0; }
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.labels li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  background: var(--card);
+  font-size: 0.92rem;
+}
+
+blockquote {
+  margin: 1.4rem 0 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+}
+
+blockquote p { margin: 0 0 0.45rem; }
+blockquote footer { color: var(--muted); }
+
+.pagina { padding: 1.4rem 0 0.4rem; }
+.pagina h1 { max-width: 18ch; }
+
+.voet {
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0 2rem;
+  color: var(--muted);
+}
+
+.voet .wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.voet a { color: var(--ink); }
+
+address { font-style: normal; }
+
+@media (max-width: 860px) {
+  .kop { flex-wrap: wrap; }
+  .kop nav { order: 3; width: 100%; margin-left: 0; flex-wrap: wrap; }
+  .held, .deuren, .twee, .zes { grid-template-columns: minmax(0, 1fr); }
+  .foto img { height: 62vw; min-height: 240px; }
+  h1 { font-size: 2.15rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

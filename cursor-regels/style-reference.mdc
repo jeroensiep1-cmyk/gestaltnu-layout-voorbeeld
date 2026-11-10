@@ -1,0 +1,15 @@
+---
+description: Definitive Gestalt Nu visual style — a-stijlblad, Open Doodles poppetjes, live CSS colors
+alwaysApply: true
+---
+
+# Visuele stijl — Gestalt Nu
+
+- Figuren: start vanuit **Open Doodles**-poppetjes; maak daarna eigen Gestalt Nu-poppetjes.
+- Bestaande eigen creaties horen bij de stijl: groep / cirkel met de kettingzaag (`figuren_v12` / `groep-poppetjes`), monnik-met-koe / monnik-koeien-doodle.
+- Definitieve stijlreferentie (niet alleen voorstel): `afbeeldingen\a-stijlblad.png`
+- Live site-kleuren uit `site\stijl.css`:
+  - crème `#f6eedf`
+  - inkt `#2a231c`
+  - teal `#0f6e6e`
+  - terracotta `#c45c3e`

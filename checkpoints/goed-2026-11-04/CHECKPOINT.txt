@@ -1,0 +1,12 @@
+﻿Checkpoint: goed-2026-11-04
+Datum: 2026-11-04 ~07:03
+Bron: site\ (kopie, site niet gewijzigd)
+
+VAST PUNT — niet overschrijven zonder opdracht van Jeroen.
+Apart van: goed-2026-11-03, voorpagina-hersteld_2026-11-03_1950
+
+Inhoud: huidige site-staat (egale crème, één header, menu zoals op de site).
+Kolomregel in gekopieerde CSS: zie .voorpagina .blad in stijl.css
+
+Terugzetten:
+  Copy-Item -Recurse -Force checkpoints\goed-2026-11-04\* site\

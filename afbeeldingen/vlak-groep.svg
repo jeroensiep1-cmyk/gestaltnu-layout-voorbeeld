@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="Drie volwassenen dicht bij elkaar, als kleurvlakken.">
+  <rect width="1440" height="900" fill="#861E45"/>
+  <ellipse cx="230" cy="470" rx="128" ry="140" fill="#121212"/>
+  <ellipse cx="1210" cy="470" rx="128" ry="140" fill="#121212"/>
+  <ellipse cx="720" cy="390" rx="108" ry="118" fill="#121212"/>
+  <ellipse cx="310" cy="530" rx="78" ry="90" fill="#F4B7C6"/>
+  <ellipse cx="1130" cy="530" rx="78" ry="90" fill="#FF5344"/>
+  <ellipse cx="720" cy="455" rx="66" ry="76" fill="#8EBEF5"/>
+  <ellipse cx="210" cy="860" rx="270" ry="250" fill="#F4B7C6"/>
+  <ellipse cx="1230" cy="860" rx="270" ry="250" fill="#FF5344"/>
+  <ellipse cx="720" cy="900" rx="210" ry="230" fill="#1A1744"/>
+  <ellipse cx="470" cy="760" rx="78" ry="150" transform="rotate(26 470 760)" fill="#8EBEF5"/>
+  <ellipse cx="970" cy="760" rx="78" ry="150" transform="rotate(-26 970 760)" fill="#F4B7C6"/>
+</svg>

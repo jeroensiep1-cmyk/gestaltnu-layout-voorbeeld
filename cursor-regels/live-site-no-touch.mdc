@@ -1,0 +1,18 @@
+---
+description: Live Gestalt Nu site (site/, index.html, berichten) NOOIT aanraken
+alwaysApply: true
+---
+
+# Live site — niet aanraken
+
+De live Gestalt Nu-site wordt **NOOIT** aangeraakt:
+
+- Niets wijzigen, verplaatsen, overschrijven of verwijderen onder `site/`
+- Geldt vooral voor `index.html` en berichten (`bericht.js` en vergelijkbaar)
+- Pad: `C:\Users\jeroe\gestaltnu-layout-voorbeeld\site`
+
+Inventariseren / lezen mag. Schrijven niet — ook niet “even” of “tijdelijk”.
+
+Lifestyle-onderwerpen horen **niet** in deze regel; die mogen wel.
+
+Dit versterkt `geen-aannames-site.mdc` en **AGENTS.md** §1 / §3.

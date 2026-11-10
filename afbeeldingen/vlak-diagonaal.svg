@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="Grote kleurvlakken in wijnrood, donkerblauw en koraal.">
+  <rect width="1440" height="900" fill="#861E45"/>
+  <polygon points="0,0 980,0 420,900 0,900" fill="#1A1744"/>
+  <polygon points="0,520 560,900 0,900" fill="#FF4B3A"/>
+  <polygon points="1440,0 1440,280 1080,0" fill="#F4B7C6"/>
+  <polygon points="1440,900 1440,560 1120,900" fill="#FF4B3A"/>
+</svg>

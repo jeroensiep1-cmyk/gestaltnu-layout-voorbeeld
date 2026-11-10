@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3200 1800" width="3200" height="1800" role="img"
+  aria-label="Eigen bioscoopdoodle: zittend poppetje, stoelen, doek met maskers triggers belemmeringen, open deur met zon.">
+  <rect width="3200" height="1800" fill="#f6eedf"/>
+
+  <!-- zachte zaal, geen enso-cirkel -->
+  <path d="M260 320
+           C400 240 900 200 1500 220
+           C2000 240 2360 320 2480 420
+           L2520 1280
+           C1800 1380 900 1400 300 1300 Z"
+        fill="#3a2f24" opacity="0.42"/>
+
+  <!-- filmscherm -->
+  <rect x="520" y="280" width="1400" height="560" rx="40"
+        fill="#2a231c" stroke="#3a2f24" stroke-width="14" stroke-linejoin="round"/>
+  <rect x="560" y="320" width="1320" height="480" rx="28"
+        fill="#1a1511" stroke="#3a2f24" stroke-width="8"/>
+
+  <!-- DOEK: maskers -->
+  <ellipse cx="780" cy="470" rx="110" ry="120" fill="#f2b8a0" stroke="#3a2f24" stroke-width="12"/>
+  <circle cx="740" cy="450" r="10" fill="#3a2f24"/>
+  <circle cx="820" cy="450" r="10" fill="#3a2f24"/>
+  <path d="M730 520c20 28 60 28 80 0" fill="none" stroke="#3a2f24" stroke-width="10" stroke-linecap="round"/>
+  <path d="M690 400c30-36 120-36 150 0" fill="none" stroke="#3a2f24" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="1050" cy="520" rx="95" ry="105" fill="#0f6e6e" stroke="#3a2f24" stroke-width="12"/>
+  <circle cx="1015" cy="500" r="11" fill="#f6eedf"/>
+  <circle cx="1085" cy="500" r="11" fill="#f6eedf"/>
+  <path d="M1010 560c18 6 50 6 68 0" fill="none" stroke="#f6eedf" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- triggers -->
+  <path d="M1320 360 L1240 520 H1320 L1220 700 L1450 520 H1360 Z"
+        fill="#e8b84a" stroke="#3a2f24" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M1500 420 L1450 510 H1510 L1400 620 L1580 510 H1525 Z"
+        fill="#c45c3e" stroke="#3a2f24" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M1280 680c0-36 30-52 60-26c30-26 60-10 60 26c0 42-60 78-60 78s-60-36-60-78z"
+        fill="#c45c3e" stroke="#3a2f24" stroke-width="10" stroke-linejoin="round"/>
+
+  <!-- belemmeringen -->
+  <rect x="1680" y="360" width="220" height="260" rx="18" fill="#d8c8a8" stroke="#3a2f24" stroke-width="12"/>
+  <path d="M1680 440h220M1680 520h220M1790 360v260" fill="none" stroke="#3a2f24" stroke-width="8" opacity="0.75"/>
+  <ellipse cx="1980" cy="400" rx="32" ry="24" fill="none" stroke="#3a2f24" stroke-width="12"/>
+  <ellipse cx="2020" cy="450" rx="32" ry="24" fill="none" stroke="#3a2f24" stroke-width="12"/>
+  <ellipse cx="1980" cy="500" rx="32" ry="24" fill="none" stroke="#3a2f24" stroke-width="12"/>
+  <ellipse cx="2020" cy="550" rx="32" ry="24" fill="none" stroke="#3a2f24" stroke-width="12"/>
+  <ellipse cx="1860" cy="680" rx="36" ry="34" fill="#f0d7c2" stroke="#3a2f24" stroke-width="8"/>
+  <path d="M1830 710c8 55 18 80 30 80s24-25 32-80" fill="#c45c3e" stroke="#3a2f24" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M1810 740h100M1820 770h80" fill="none" stroke="#3a2f24" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="1848" cy="672" r="5" fill="#3a2f24"/>
+  <circle cx="1874" cy="672" r="5" fill="#3a2f24"/>
+
+  <!-- stoelenrijen -->
+  <g fill="#0f6e6e" stroke="#3a2f24" stroke-linejoin="round">
+    <path d="M420 920 q40-80 140-80 t140 80 v90 H420z" stroke-width="11"/>
+    <path d="M740 920 q40-80 140-80 t140 80 v90 H740z" stroke-width="11"/>
+    <path d="M1060 920 q40-80 140-80 t140 80 v90 H1060z" stroke-width="11"/>
+    <path d="M1380 920 q40-80 140-80 t140 80 v90 H1380z" stroke-width="11"/>
+    <path d="M360 1080 q48-95 170-95 t170 95 v110 H360z" stroke-width="12"/>
+    <path d="M760 1080 q48-95 170-95 t170 95 v110 H760z" stroke-width="12"/>
+    <path d="M1160 1080 q48-95 170-95 t170 95 v110 H1160z" stroke-width="12"/>
+  </g>
+
+  <!-- hoofdstoel + eigen zittend poppetje -->
+  <path d="M980 1280 q60-130 260-130 t260 130 v180 H980z"
+        fill="#0f6e6e" stroke="#3a2f24" stroke-width="14" stroke-linejoin="round"/>
+  <ellipse cx="1240" cy="1420" rx="250" ry="70" fill="#0b5555" stroke="#3a2f24" stroke-width="12"/>
+  <path d="M1120 1410 C1060 1440 1020 1520 1010 1620"
+        fill="none" stroke="#3a2f24" stroke-width="16" stroke-linecap="round"/>
+  <path d="M1360 1410 C1420 1440 1460 1520 1470 1620"
+        fill="none" stroke="#3a2f24" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="990" cy="1640" rx="55" ry="24" fill="#2a231c" stroke="#3a2f24" stroke-width="10"/>
+  <ellipse cx="1490" cy="1640" rx="55" ry="24" fill="#2a231c" stroke="#3a2f24" stroke-width="10"/>
+  <path d="M1120 1180
+           C1140 1360 1180 1460 1240 1460
+           C1300 1460 1340 1360 1360 1180
+           C1310 1155 1270 1145 1240 1145
+           C1210 1145 1170 1155 1120 1180 Z"
+        fill="#c45c3e" stroke="#3a2f24" stroke-width="13" stroke-linejoin="round"/>
+  <ellipse cx="1265" cy="1080" rx="88" ry="84" fill="#f0d7c2" stroke="#3a2f24" stroke-width="13"/>
+  <path d="M1195 1020 C1230 960 1320 955 1360 1005"
+        fill="none" stroke="#3a2f24" stroke-width="14" stroke-linecap="round"/>
+  <path d="M1185 1080c-22 0-32 14-32 26s10 26 32 26" fill="none" stroke="#3a2f24" stroke-width="11" stroke-linecap="round"/>
+  <path d="M1345 1080c22 0 32 14 32 26s-10 26-32 26" fill="none" stroke="#3a2f24" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="1255" cy="1065" r="8" fill="#3a2f24"/>
+  <circle cx="1310" cy="1065" r="8" fill="#3a2f24"/>
+  <path d="M1250 1115c16 10 48 10 64 0" fill="none" stroke="#3a2f24" stroke-width="9" stroke-linecap="round"/>
+  <path d="M1140 1240 C1060 1300 1040 1380 1080 1440"
+        fill="none" stroke="#3a2f24" stroke-width="14" stroke-linecap="round"/>
+  <path d="M1340 1240 C1480 1280 1680 1240 1860 1160"
+        fill="none" stroke="#3a2f24" stroke-width="14" stroke-linecap="round"/>
+  <ellipse cx="1085" cy="1455" rx="38" ry="30" fill="#f0d7c2" stroke="#3a2f24" stroke-width="10"/>
+  <ellipse cx="1880" cy="1150" rx="40" ry="32" fill="#f0d7c2" stroke="#3a2f24" stroke-width="10"/>
+
+  <!-- open deur rechts + zon + natuur -->
+  <path d="M2360 180 h680 c28 0 48 22 48 50 v1280 c0 28-20 50-48 50 h-680 c-28 0-48-22-48-50 V230 c0-28 20-50 48-50z"
+        fill="#f6eedf" stroke="#3a2f24" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M2335 220 h700 v560 H2335z" fill="#e8f0d8" stroke="#3a2f24" stroke-width="10"/>
+  <path d="M2335 740 C2500 640 2700 680 2880 600 C2980 700 3040 740 3035 780 V1540 H2335 Z"
+        fill="#7ea86a" stroke="#3a2f24" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M2335 900 C2480 800 2650 840 2820 760 C2940 840 3020 880 3035 920 V1080 H2335 Z"
+        fill="#b9c8a4" stroke="#3a2f24" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="2860" cy="400" r="110" fill="#e8b84a" stroke="#3a2f24" stroke-width="13"/>
+  <g stroke="#3a2f24" stroke-width="12" stroke-linecap="round">
+    <path d="M2860 230 v-40"/><path d="M2860 570 v40"/>
+    <path d="M2690 400 h-40"/><path d="M3030 400 h40"/>
+    <path d="M2740 280 l-28-28"/><path d="M2980 520 l28 28"/>
+    <path d="M2980 280 l28-28"/><path d="M2740 520 l-28 28"/>
+  </g>
+  <path d="M2500 1100 c0-50 22-100 45-100 s45 50 45 100" fill="none" stroke="#3a2f24" stroke-width="14" stroke-linecap="round"/>
+  <ellipse cx="2545" cy="960" rx="110" ry="125" fill="#7ea86a" stroke="#3a2f24" stroke-width="12"/>
+  <circle cx="2720" cy="1200" r="14" fill="#c45c3e"/>
+  <circle cx="2820" cy="1280" r="12" fill="#e8b84a"/>
+  <circle cx="2920" cy="1180" r="14" fill="#f2b8a0" stroke="#3a2f24" stroke-width="4"/>
+  <path d="M3010 220 L3160 300 L3160 1500 L3010 1560 Z"
+        fill="#0f6e6e" stroke="#3a2f24" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="3070" cy="900" r="18" fill="#e8b84a" stroke="#3a2f24" stroke-width="8"/>
+</svg>

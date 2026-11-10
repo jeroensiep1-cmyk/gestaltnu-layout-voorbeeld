@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="Twee volwassenen zitten tegenover elkaar, als kleurvlakken.">
+  <rect width="1440" height="900" fill="#1840C8"/>
+  <g fill="#121212">
+    <ellipse cx="250" cy="430" rx="118" ry="132"/>
+    <ellipse cx="1188" cy="400" rx="126" ry="140"/>
+  </g>
+  <ellipse cx="318" cy="468" rx="74" ry="86" fill="#FF5344"/>
+  <ellipse cx="1110" cy="448" rx="78" ry="90" fill="#F4B7C6"/>
+  <g fill="#161433">
+    <ellipse cx="210" cy="690" rx="250" ry="210"/>
+    <ellipse cx="1240" cy="700" rx="270" ry="220"/>
+  </g>
+  <ellipse cx="430" cy="640" rx="86" ry="150" transform="rotate(28 430 640)" fill="#8EBEF5"/>
+  <ellipse cx="1020" cy="630" rx="78" ry="150" transform="rotate(-24 1020 630)" fill="#FF5344"/>
+  <ellipse cx="560" cy="820" rx="210" ry="62" transform="rotate(-8 560 820)" fill="#FF5344"/>
+  <ellipse cx="900" cy="830" rx="220" ry="64" transform="rotate(10 900 830)" fill="#8EBEF5"/>
+  <ellipse cx="700" cy="860" rx="70" ry="28" fill="#161433"/>
+</svg>

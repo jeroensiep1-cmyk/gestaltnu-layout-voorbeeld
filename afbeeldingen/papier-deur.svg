@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-label="Een deur staat open. Daarachter schijnt de zon naar je toe.">
+  <polygon points="400,36 880,12 908,548 368,628" fill="#FFE7A8"/>
+  <polygon points="530,96 748,74 820,612 478,658" fill="#FFD56A"/>
+  <circle cx="688" cy="128" r="74" fill="#FFF6D4"/>
+  <polygon points="80,548 470,492 860,680 8,680" fill="#FFD56A"/>
+  <polygon points="132,78 468,30 534,632 108,676" fill="#01C476"/>
+  <polygon points="198,138 414,104 466,572 184,604" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="468" y1="30" x2="534" y2="632" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="424" cy="352" r="18" fill="#FFFFFF"/>
+  <circle cx="424" cy="352" r="7" fill="#3881F1"/>
+</svg>

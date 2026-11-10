@@ -1,0 +1,25 @@
+---
+description: Kerndoel nieuwe Gestalt Nu-site — vindbaarheid Google + AI in vakgebied
+alwaysApply: true
+---
+
+# Kerndoel websiteproject (Gestalt Nu)
+
+Project: nieuwe site in `site/`, live op `https://www.gestaltnu.nl/`, lokale preview `http://127.0.0.1:8765/`.
+
+## Doel (Jeroen, expliciet)
+
+De site moet **het best gevonden** worden in Jeroens vakgebied:
+
+- coaching
+- therapie
+- bewustwording
+- mindfulness
+
+Concreet: **bovenaan in Google** voor zoeken zoals **"therapie Rotterdam"** (en vergelijkbare termen in dat veld).
+
+Tegelijk: goed leesbaar voor Google (SEO) én goed vindbaar / begrijpelijk voor AI (o.a. `llms.txt`, schema.org, semantische HTML, duidelijke titels en navigatie).
+
+## Werkregel
+
+Sitewijzigingen alleen na expliciete opdracht (`geen-aannames-site.mdc`). Dit doel stuurt analyse, copy, structuur en SEO/AI-keuzes — het is geen vrijbrief om `site/` te herschrijven.

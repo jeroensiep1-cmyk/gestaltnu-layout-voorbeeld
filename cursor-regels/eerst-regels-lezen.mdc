@@ -1,0 +1,34 @@
+---
+description: Eerst START-OVERZICHT, dan regels/script-header, werkcheck; tonen via preview-URL 8765
+alwaysApply: true
+---
+
+# Eerst regels lezen — vaste start
+
+Bij **elk nieuw telefoongesprek** of **elke nieuwe chat** over de Gestalt Nu-website / dit project:
+
+1. **Eerst lezen**, daarna pas iets doen of zeggen.
+2. Lees **volledig** eerst:
+   `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\START-OVERZICHT.md`
+3. Lees daarna **volledig** deze vijf regels in `.cursor/rules/`:
+   - `storage-gestalt-nu-cursor.mdc`
+   - `self-reflection-no-excuses.mdc`
+   - `style-reference.mdc`
+   - `live-site-no-touch.mdc`
+   - `dyslexia-copy-paste.mdc`
+4. Lees daarna de **header** van:
+   `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\start-script.ps1`
+   (het commentblok bovenaan met GOAL, SAFETY, STYLE, STORAGE, enz. — niet het hele script uitvoeren).
+
+5. Doe daarna een **snelle werkcheck** vóór je verdergaat:
+   - Draait de preview (`http://127.0.0.1:8765/`)?
+   - Werken de scripts in `scripts/` (o.a. start/stop-preview) en is `start-script.ps1` niet geblokkeerd (Norton/Defender)?
+   - Geen duidelijke fouten of vastgelopen processen?
+   Werkt iets niet: **meteen melden** aan Jeroen, daarna pas verder werken.
+
+6. **Bestanden tonen** aan Jeroen: standaard via de lokale preview op `http://127.0.0.1:8765/` + het relatieve pad als **plakklare URL in de chat**.  
+   Niet: Windows-toets+R, niet bestanden naar Chrome slepen.
+
+Pas **na** die lezing én check: antwoorden, tools, voorstellen of wijzigingen.
+
+Dit is standaardgedrag, zodat Jeroen er iets aan heeft zonder de afspraken opnieuw uit te leggen.

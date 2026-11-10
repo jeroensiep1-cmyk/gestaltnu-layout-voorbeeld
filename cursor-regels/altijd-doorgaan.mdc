@@ -1,0 +1,26 @@
+---
+description: Eén lijst — eerst lezen; afbeeldingsafspraken altijd meedragen; doorwerken; geen aannames; diep zoeken; beloften uitvoeren; klaar alleen na check vanuit Jeroens perspectief.
+alwaysApply: true
+---
+
+# Altijd doorgaan
+
+**Eerst deze hele lijst lezen, daarna pas handelen.**
+
+De **opslagafspraken** (punten 6, 6a, 6b, 6c en 12) horen **standaard in elke sessie** mee — via dit regelsbestand, niet alleen als iemand het in de chat herhaalt.
+
+1. **Eerst lezen — altijd, elke lijst** — elke lijst (deze én elke nieuwe of toekomstige lijst in regels, checklists, taken of scripts) begint met **eerst lezen**; lees de hele lijst vóór je handelt. Geen uitzondering.
+2. **Doorwerken** — bij lopend onderzoek/tooling nooit om toestemming vragen; zelf doorklikken, tools gebruiken, smart-mode approval nemen. Uitzondering: `site/` pas wijzigen na expliciete ja (`geen-aannames-site.mdc`).
+3. **Geen aannames** — alleen exact wat gevraagd is; twijfel of “ook even” → eerst vragen.
+4. **Diep zoeken, niet vroeg stoppen** — niet stoppen bij de eerste lege map/match; meerdere namen, mappen, tijden, inhoud, transcripts; pas “niet gevonden” na serieuze routes; bij “zoek verder” meteen door zonder tegenwerping.
+5. **Beloften uitvoeren** — niet stil blijven; toegezegd werk afmaken (o.a. in `afbeeldingen/`); zeg wat klaar is of wat faalt.
+6. **Afbeeldingen → `Gestalt Nu Cursor\afbeeldingen`** — is het een afbeelding (png/jpg/jpeg/webp/gif/svg, ook raw/clean/done/verify), dan **uitsluitend** naar `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\afbeeldingen`. Niet naar `gestaltnu-layout-voorbeeld\afbeeldingen`, niet naar temp, niet elders. (Eerdere route naar de projectmap `afbeeldingen` was onjuist volgens Jeroen.)
+6a. **GenerateImage → meteen kopiëren** — Cursor `GenerateImage` landt eerst in `.cursor\projects\…\assets\`; **direct daarna** naar `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\afbeeldingen\` kopiëren. Klaar melden pas als het daar staat.
+6b. **Geen afbeelding → projectmap in `Gestalt Nu Cursor`** — is het **geen** afbeelding, dan naar de juiste submap onder `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor` volgens 6c (niet los op het bureaublad).
+6c. **Per project automatisch de juiste map** — ALLES gaat naar `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor` onder de eigen projectnaam (Jeroens correctie 6 nov 2026): nieuw website-werk → `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\nieuwe website`; afbeeldingen-werk → `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\afbeeldingen`; marketing-werk → `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\marketing`.
+7. **Niet liegen** — niets beweren dat je niet hebt geverifieerd; twijfel hardop.
+8. **Klaar alleen vanuit Jeroen** — interne checks zijn niet genoeg; verifieer zichtbaar/bruikbaar voor hem, of zeg eerlijk dat je dat niet kunt.
+9. **Fout = kort erkennen + direct handelen** — geen excuses, geen rechtvaardiging.
+10. **Grondig dubbelchecken** — antwoord pas als de gevraagde taak compleet is; leer van fouten automatisch.
+11. **Eerdere beelden zelf opzoeken** — vraagt Jeroen naar eerdere afbeeldingen, generaties of bestanden: **nooit** aan hem vragen hoe ze heetten of waar ze stonden; zelf opzoeken in transcript en geschiedenis. Hij hoeft niets te onthouden; vind je het niet, is dat jouw fout.
+12. **Centrale map `Gestalt Nu Cursor`** — staat **bewust** op het bureaublad (`C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor`). Dit is de centrale opslag/output-map (geen rommel). Projectmappen `afbeeldingen`, `marketing` en `nieuwe website` zijn bestemmingen (6c). **Niet** verwijderen, verplaatsen of legen zonder expliciete ja. De lege map alleen-`Cursor` is verwijderd en **niet** opnieuw aanmaken. Verder niets op het bureaublad zonder zijn **expliciete** ja. Site-workspace blijft `gestaltnu-layout-voorbeeld` (zie `AGENTS.md` §0).

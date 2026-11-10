@@ -1,0 +1,4 @@
+# Lokale pipeline voor doodle-nabehandeling / handmatige tekening
+Pillow>=10.0
+numpy>=1.26
+scipy>=1.11

@@ -1,0 +1,249 @@
+﻿Dup scan 2026-11-10T07:16:35.0981749+01:00
+dup_groups=49
+HASH 7E7E0606D89BC8560A316B775452AEBE8F8C4567AB51C0FD4E0DEB2F9DD0AB6D count=4
+  afbeeldingen\start-script.ps1
+  marketing\start-script.ps1
+  nieuwe website\start-script.ps1
+  start-script.ps1
+HASH E152C358C6D1112A9CFA687B0F285B38161B9D94D004420143C7B4AFCCFC9E44 count=2
+  .cursor\rules\altijd-doorgaan.mdc
+  cursor-regels\altijd-doorgaan.mdc
+HASH 9CBA5DBAD5CED8C051491BD2AF7E189E4CEBC8337198506A4C291476549BD56A count=2
+  .cursor\rules\dubbelcheck-geen-aannames.mdc
+  cursor-regels\dubbelcheck-geen-aannames.mdc
+HASH EF7F49046CFD0FF9949ACAFE422B1F66E4F88544018A34D9F3EE7722BCE3BBFA count=2
+  .cursor\rules\dyslexia-copy-paste.mdc
+  cursor-regels\dyslexia-copy-paste.mdc
+HASH A4FFBB15144F498BCA3600C86DC7610BFF2BBF216C592B6E33CAACF97669B59D count=2
+  .cursor\rules\eerst-regels-lezen.mdc
+  cursor-regels\eerst-regels-lezen.mdc
+HASH 7E08168E5174CD713AC4C02B6BA4823C44671ADB8534C3BF08C82CFC31B97E0F count=2
+  .cursor\rules\geen-aannames-site.mdc
+  cursor-regels\geen-aannames-site.mdc
+HASH BFEDE5CA7670DB4804AA570EF5433BADB6466601A4144EC0BDE479D6E0039655 count=2
+  .cursor\rules\kerndoel-vindbaarheid.mdc
+  cursor-regels\kerndoel-vindbaarheid.mdc
+HASH B6F43B0CB0924C555B0921A8A63F9EF885A11F7FE575538B84D34E2780DFD87F count=2
+  .cursor\rules\live-site-no-touch.mdc
+  cursor-regels\live-site-no-touch.mdc
+HASH 6B3606FA8A953BB8849EC8D726749AB516D34D323A33D61AF2590FA947249ECE count=2
+  .cursor\rules\self-reflection-no-excuses.mdc
+  cursor-regels\self-reflection-no-excuses.mdc
+HASH 2043993BFAFB2E8208435F019AEC63E115CA8A13E753C839C2D54391D0A15A71 count=2
+  .cursor\rules\storage-gestalt-nu-cursor.mdc
+  cursor-regels\storage-gestalt-nu-cursor.mdc
+HASH 0BCDE197309D4A2D9827736687EC9E05FF33AB0D7E13509091092FE482D6F1A6 count=2
+  .cursor\rules\style-reference.mdc
+  cursor-regels\style-reference.mdc
+HASH 42BF390F1F0353BC54E09BA54BB132634D096F0AFEB30F5F2B57B250B1421662 count=2
+  .cursor\rules\tekst-rechtzetten.mdc
+  cursor-regels\tekst-rechtzetten.mdc
+HASH 83F967BC05E4FE4CF4B9C626AD46A26350D0B9391D0848E669F7100675B3AF6F count=10
+  checkpoints\goed-2026-11-03\app.js
+  checkpoints\goed-2026-11-04\app.js
+  checkpoints\goed-2026-11-04-1100\app.js
+  checkpoints\goed-2026-11-04-b\app.js
+  checkpoints\goed-2026-11-04-groep-foto\app.js
+  checkpoints\goed-2026-11-04-header\app.js
+  checkpoints\goed-2026-11-04-logo-hand\app.js
+  checkpoints\goed-2026-11-04-menu-mindfulness\app.js
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\app.js
+  site\app.js
+HASH 74D5A59166A15AEAB8A804352828F8BFC41A1B35372952BB49F813DF5D46702C count=6
+  checkpoints\goed-2026-11-03\CHECKPOINT.txt
+  checkpoints\goed-2026-11-04-1100\CHECKPOINT.txt
+  checkpoints\goed-2026-11-04-groep-foto\CHECKPOINT.txt
+  checkpoints\goed-2026-11-04-header\CHECKPOINT.txt
+  checkpoints\goed-2026-11-04-logo-hand\CHECKPOINT.txt
+  site\CHECKPOINT.txt
+HASH E10546933053CC5FF00FE3E71919C1BA5B5A9C47D5A40569D9E7BF3DE275F359 count=10
+  checkpoints\goed-2026-11-03\homepage-schets.html
+  checkpoints\goed-2026-11-04\homepage-schets.html
+  checkpoints\goed-2026-11-04-1100\homepage-schets.html
+  checkpoints\goed-2026-11-04-b\homepage-schets.html
+  checkpoints\goed-2026-11-04-groep-foto\homepage-schets.html
+  checkpoints\goed-2026-11-04-header\homepage-schets.html
+  checkpoints\goed-2026-11-04-logo-hand\homepage-schets.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\homepage-schets.html
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\homepage-schets.html
+  site\homepage-schets.html
+HASH FDFAB380EAFF0010F08B00EE936563A89C67CF8AE3134C31B071CD5411ABA469 count=5
+  checkpoints\goed-2026-11-03\index.html
+  checkpoints\goed-2026-11-04\index.html
+  checkpoints\goed-2026-11-04-1100\index.html
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\index.html
+  experimenten\onderzoek\menu-voorstel-voorpagina\index.html
+HASH 57701EFBE3947F85E5B500593B7CE74FE852D6717F82864A9A91365343EDAAF8 count=9
+  checkpoints\goed-2026-11-03\LIVE.md
+  checkpoints\goed-2026-11-04\LIVE.md
+  checkpoints\goed-2026-11-04-1100\LIVE.md
+  checkpoints\goed-2026-11-04-b\LIVE.md
+  checkpoints\goed-2026-11-04-groep-foto\LIVE.md
+  checkpoints\goed-2026-11-04-header\LIVE.md
+  checkpoints\goed-2026-11-04-logo-hand\LIVE.md
+  checkpoints\goed-2026-11-04-menu-mindfulness\LIVE.md
+  site\LIVE.md
+HASH D4D04A324B658AE771564574B0851078FF97276FDF8E0230F8B9CF256347387C count=10
+  checkpoints\goed-2026-11-03\llms.txt
+  checkpoints\goed-2026-11-04\llms.txt
+  checkpoints\goed-2026-11-04-1100\llms.txt
+  checkpoints\goed-2026-11-04-b\llms.txt
+  checkpoints\goed-2026-11-04-groep-foto\llms.txt
+  checkpoints\goed-2026-11-04-header\llms.txt
+  checkpoints\goed-2026-11-04-logo-hand\llms.txt
+  checkpoints\goed-2026-11-04-menu-mindfulness\llms.txt
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\llms.txt
+  site\llms.txt
+HASH 19731693C63BD62337770B749819C2E945342E6A0FD67DD8A42251BA794893B3 count=10
+  checkpoints\goed-2026-11-03\manifest.webmanifest
+  checkpoints\goed-2026-11-04\manifest.webmanifest
+  checkpoints\goed-2026-11-04-1100\manifest.webmanifest
+  checkpoints\goed-2026-11-04-b\manifest.webmanifest
+  checkpoints\goed-2026-11-04-groep-foto\manifest.webmanifest
+  checkpoints\goed-2026-11-04-header\manifest.webmanifest
+  checkpoints\goed-2026-11-04-logo-hand\manifest.webmanifest
+  checkpoints\goed-2026-11-04-menu-mindfulness\manifest.webmanifest
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\manifest.webmanifest
+  site\manifest.webmanifest
+HASH 6BD6EA7B17315E42CEA9A064976961E376DA6D560F22A8691CE787C6B5EA1142 count=10
+  checkpoints\goed-2026-11-03\paginas-bedoeling.md
+  checkpoints\goed-2026-11-04\paginas-bedoeling.md
+  checkpoints\goed-2026-11-04-1100\paginas-bedoeling.md
+  checkpoints\goed-2026-11-04-b\paginas-bedoeling.md
+  checkpoints\goed-2026-11-04-groep-foto\paginas-bedoeling.md
+  checkpoints\goed-2026-11-04-header\paginas-bedoeling.md
+  checkpoints\goed-2026-11-04-logo-hand\paginas-bedoeling.md
+  checkpoints\goed-2026-11-04-menu-mindfulness\paginas-bedoeling.md
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\paginas-bedoeling.md
+  site\paginas-bedoeling.md
+HASH 1BCB54A31ADA1DD93BB56E89806653B0321E81B9747320F73DA11E09B1F8067E count=10
+  checkpoints\goed-2026-11-03\robots.txt
+  checkpoints\goed-2026-11-04\robots.txt
+  checkpoints\goed-2026-11-04-1100\robots.txt
+  checkpoints\goed-2026-11-04-b\robots.txt
+  checkpoints\goed-2026-11-04-groep-foto\robots.txt
+  checkpoints\goed-2026-11-04-header\robots.txt
+  checkpoints\goed-2026-11-04-logo-hand\robots.txt
+  checkpoints\goed-2026-11-04-menu-mindfulness\robots.txt
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\robots.txt
+  site\robots.txt
+HASH E5D3F94189EADF0734BBE325DD48514814094A306A824249C1C0E0C0D10F346C count=10
+  checkpoints\goed-2026-11-03\sitemap.xml
+  checkpoints\goed-2026-11-04\sitemap.xml
+  checkpoints\goed-2026-11-04-1100\sitemap.xml
+  checkpoints\goed-2026-11-04-b\sitemap.xml
+  checkpoints\goed-2026-11-04-groep-foto\sitemap.xml
+  checkpoints\goed-2026-11-04-header\sitemap.xml
+  checkpoints\goed-2026-11-04-logo-hand\sitemap.xml
+  checkpoints\goed-2026-11-04-menu-mindfulness\sitemap.xml
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\sitemap.xml
+  site\sitemap.xml
+HASH CD33D025F66804BF24A270EA4D567170D34AD2628AE21C081DFF3BC403D91738 count=10
+  checkpoints\goed-2026-11-03\stijlen.html
+  checkpoints\goed-2026-11-04\stijlen.html
+  checkpoints\goed-2026-11-04-1100\stijlen.html
+  checkpoints\goed-2026-11-04-b\stijlen.html
+  checkpoints\goed-2026-11-04-groep-foto\stijlen.html
+  checkpoints\goed-2026-11-04-header\stijlen.html
+  checkpoints\goed-2026-11-04-logo-hand\stijlen.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\stijlen.html
+  checkpoints\voorpagina-hersteld_2026-11-03_1950\stijlen.html
+  site\stijlen.html
+HASH EB85486314D0624054DF89E4D57346799F894FF2F2101A923F1FD08A54EEC34E count=7
+  checkpoints\goed-2026-11-03\sw.js
+  checkpoints\goed-2026-11-04\sw.js
+  checkpoints\goed-2026-11-04-1100\sw.js
+  checkpoints\goed-2026-11-04-b\sw.js
+  checkpoints\goed-2026-11-04-header\sw.js
+  checkpoints\goed-2026-11-04-menu-mindfulness\sw.js
+  experimenten\onderzoek\menu-voorstel-voorpagina\sw.js
+HASH 86189AD8FF261FF00C4E13062841CB152A0457E40810C902786AB862546D3A53 count=4
+  checkpoints\goed-2026-11-03\ademwerk\index.html
+  checkpoints\goed-2026-11-04\ademwerk\index.html
+  checkpoints\goed-2026-11-04-1100\ademwerk\index.html
+  experimenten\onderzoek\menu-voorstel-voorpagina\ademwerk\index.html
+HASH A37C9DDF36CF0E0A876325DA0C5C4FD609CF97DB55BFFF776CA7333D8227A2D3 count=4
+  checkpoints\goed-2026-11-03\bewustwordingsgroep\index.html
+  checkpoints\goed-2026-11-04\bewustwordingsgroep\index.html
+  checkpoints\goed-2026-11-04-1100\bewustwordingsgroep\index.html
+  experimenten\onderzoek\menu-voorstel-voorpagina\bewustwordingsgroep\index.html
+HASH 5BE2B2F4A1ADB8041233EE8E2F09EEDE0F09AE7BD22EA62C2B365FC8F01EADBC count=3
+  checkpoints\goed-2026-11-03\gesprekken\index.html
+  checkpoints\goed-2026-11-04\gesprekken\index.html
+  experimenten\onderzoek\menu-voorstel-voorpagina\gesprekken\index.html
+HASH 93B056C11215952BBA095C01FB47ABDFEDB461060DA87FF0BB93E6B2E7B7C087 count=4
+  checkpoints\goed-2026-11-03\mindfulness\index.html
+  checkpoints\goed-2026-11-04\mindfulness\index.html
+  checkpoints\goed-2026-11-04-1100\mindfulness\index.html
+  experimenten\onderzoek\menu-voorstel-voorpagina\mindfulness\index.html
+HASH 7BD3BB31D2553A4F35C0563DBDE9D546E118A051380FAF63CC88120689DE7013 count=4
+  checkpoints\goed-2026-11-03\over\index.html
+  checkpoints\goed-2026-11-04\over\index.html
+  checkpoints\goed-2026-11-04-1100\over\index.html
+  experimenten\onderzoek\menu-voorstel-voorpagina\over\index.html
+HASH FC8A6F9873071CE7FFD3B8C73227A83A706974C37BF71344C34CB1BCF16DE757 count=4
+  checkpoints\goed-2026-11-04\CHECKPOINT.txt
+  checkpoints\goed-2026-11-04-b\CHECKPOINT.txt
+  checkpoints\goed-2026-11-04-menu-mindfulness\CHECKPOINT.txt
+  experimenten\onderzoek\menu-voorstel-voorpagina\CHECKPOINT.txt
+HASH 7B8071BBEE8E8F22C11B51D0CBE9DE724850278CDCB715751C5B4BDA557C090D count=4
+  checkpoints\goed-2026-11-04\stijl.css
+  checkpoints\goed-2026-11-04-b\stijl.css
+  checkpoints\goed-2026-11-04-menu-mindfulness\stijl.css
+  experimenten\onderzoek\menu-voorstel-voorpagina\stijl.css
+HASH 47BE9CB020B3F52C30E3E80449E473DACEAF0E354F90484322B7C1AB7914356B count=2
+  checkpoints\goed-2026-11-04-b\gesprekken\index.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\gesprekken\index.html
+HASH 1BC1EA7BD546B56A7EB1CBCEF81B63D9CB6336535C135FBD8136CF604BA84CF3 count=4
+  checkpoints\goed-2026-11-04-b\index.html
+  checkpoints\goed-2026-11-04-groep-foto\index.html
+  checkpoints\goed-2026-11-04-header\index.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\index.html
+HASH 35FD6C27FF41F7E9FD2D1B1905440DAC7975D8B2998C3718BA4060E9EF451107 count=2
+  checkpoints\goed-2026-11-04-b\ademwerk\index.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\ademwerk\index.html
+HASH 34B847A3FEF01D1ECEA70F9EE867C1E6F3499B1AD63A94A5C03AF983CA0008D5 count=2
+  checkpoints\goed-2026-11-04-b\bewustwordingsgroep\index.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\bewustwordingsgroep\index.html
+HASH A27E629259343812FEAD7BF3AAE8E447351166AC433EDA9D44F606E47646A3B0 count=2
+  checkpoints\goed-2026-11-04-b\mindfulness\index.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\mindfulness\index.html
+HASH 84BF7FF8560A0D1AFD216B15178B5D4975EE5A461B153360DEAA411AAAB545F5 count=2
+  checkpoints\goed-2026-11-04-b\over\index.html
+  checkpoints\goed-2026-11-04-menu-mindfulness\over\index.html
+HASH BF62C76965B5D9AA8AA95AFD2FF65185E5F5F1848F45F5C46043C22D2C1419D3 count=2
+  checkpoints\goed-2026-11-04-groep-foto\ademwerk\index.html
+  checkpoints\goed-2026-11-04-header\ademwerk\index.html
+HASH 3038644F9BE9858D13ABA4CE8BC0073813CC8301C0245F6E8C530B0757AF6AEB count=2
+  checkpoints\goed-2026-11-04-groep-foto\gesprekken\index.html
+  checkpoints\goed-2026-11-04-header\gesprekken\index.html
+HASH 8301CA2186E19F82300DBF082134B70070F3C63421210E1F66A2AAE26AD11F1E count=2
+  checkpoints\goed-2026-11-04-groep-foto\mindfulness\index.html
+  checkpoints\goed-2026-11-04-header\mindfulness\index.html
+HASH 9F47934B3D1395E21E7933DB97CBC1CA1C0D46C8E76DAD917AF17563D55BFBFB count=2
+  checkpoints\goed-2026-11-04-groep-foto\over\index.html
+  checkpoints\goed-2026-11-04-header\over\index.html
+HASH 9F83D1B48075256946204045D8AF2C947408F385C639DAA404B7A16BCFE2CEED count=2
+  checkpoints\goed-2026-11-04-logo-hand\index.html
+  site\backups\index-LATEST-2026-11-05.html
+HASH BD2B91E05F39849E997B0FB3022A55547F43B9A0F325873FB8CE4B1F0123F012 count=2
+  checkpoints\goed-2026-11-04-logo-hand\stijl.css
+  site\stijl.css
+HASH 8CB1F5546A0E01A6FB31A78278CF326FFD5B1BCAA1103483C0D61E1BAAC4343B count=2
+  checkpoints\goed-2026-11-04-logo-hand\sw.js
+  site\sw.js
+HASH 010792F48E2847A4581A9EB5074DF4224A5E2BEEF46A13C7B08F5FFF072622FD count=2
+  checkpoints\goed-2026-11-04-logo-hand\ademwerk\index.html
+  site\ademwerk\index.html
+HASH 87D26D310C9DDF27274377E4E7A2FEB97159128E40FF7484833B55789967A8CE count=2
+  checkpoints\goed-2026-11-04-logo-hand\bewustwordingsgroep\index.html
+  site\bewustwordingsgroep\index.html
+HASH 0DE9999A055D9EFA1251728707E4E5EEB0DC104362A111DF6B46CC5797AAEE83 count=2
+  checkpoints\goed-2026-11-04-logo-hand\gesprekken\index.html
+  site\gesprekken\index.html
+HASH F86280B488283205932C00ED5C739DF5339A2E6EB3B94EE485ED465E0CDCFFEA count=2
+  checkpoints\goed-2026-11-04-logo-hand\mindfulness\index.html
+  site\mindfulness\index.html
+HASH 041578CE7FA127DCE23DE9835D9F1160FC7DD7721E21682FA308327438C07AA8 count=2
+  checkpoints\goed-2026-11-04-logo-hand\over\index.html
+  site\over\index.html

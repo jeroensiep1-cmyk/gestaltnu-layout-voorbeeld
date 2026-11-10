@@ -1,0 +1,12 @@
+﻿Checkpoint: voorpagina-hersteld_2026-11-03_1950
+Datum: 2026-11-03 19:50
+Bron: site\
+
+Staat:
+- Voorpagina hersteld met logo, groene streep, cirkel, golfjes
+- Menutekst uit de foto gehaald; echte HTML-header/nav
+- Cirkellijn aangescherpt
+- Foto iets lager (voor zover in deze build)
+- Logo en header op één hoogte
+
+Terugzetten: inhoud van deze map terugkopiëren naar site\

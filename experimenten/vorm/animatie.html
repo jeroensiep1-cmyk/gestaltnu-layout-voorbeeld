@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Rotterdam, in de poster</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #fff;
+        color: #243044;
+      }
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      svg {
+        width: min(560px, 100vw);
+        height: auto;
+        display: block;
+      }
+      .wolken {
+        animation: drijf 48s ease-in-out infinite alternate;
+      }
+      .boot {
+        animation: vaar 36s linear infinite;
+      }
+      .optocht {
+        animation: langs 32s linear infinite;
+      }
+      .been {
+        transform-box: fill-box;
+        transform-origin: center top;
+        animation: stap 1.15s linear infinite alternate;
+      }
+      .been.b {
+        animation-delay: -1.15s;
+      }
+      @keyframes drijf {
+        from { transform: translateX(0); }
+        to { transform: translateX(28px); }
+      }
+      @keyframes vaar {
+        from { transform: translateX(-160px); }
+        to { transform: translateX(980px); }
+      }
+      @keyframes langs {
+        from { transform: translateX(-150px); }
+        to { transform: translateX(920px); }
+      }
+      @keyframes stap {
+        from { transform: rotate(14deg); }
+        to { transform: rotate(-14deg); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .wolken,
+        .boot,
+        .optocht,
+        .been {
+          animation: none;
+        }
+        .optocht { transform: translateX(250px); }
+        .boot { transform: translateX(40px); }
+      }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1120" role="img" aria-label="Rotterdam, vlakke poster. Een boot vaart voorbij en drie mensen lopen langs de kade.">
+      <rect width="800" height="1120" fill="#ffffff" />
+
+      <g class="wolken" fill="#d7e4ea">
+        <ellipse cx="520" cy="96" rx="18" ry="8" />
+        <ellipse cx="540" cy="94" rx="13" ry="7" />
+        <ellipse cx="600" cy="150" rx="12" ry="6" />
+      </g>
+
+      <!-- torens -->
+      <g fill="#d4d7db">
+        <rect x="418" y="400" width="86" height="470" />
+        <rect x="514" y="362" width="78" height="478" />
+        <rect x="602" y="388" width="82" height="430" />
+      </g>
+      <g stroke="#ffffff" stroke-width="0.7" fill="none">
+        <path d="M432 418 V860 M450 418 V860 M468 418 V860 M486 418 V860" />
+        <path d="M420 440 H502 M420 464 H502 M420 488 H502 M420 512 H502 M420 536 H502 M420 560 H502 M420 584 H502 M420 608 H502 M420 632 H502 M420 656 H502 M420 680 H502 M420 704 H502 M420 728 H502 M420 752 H502 M420 776 H502 M420 800 H502 M420 824 H502 M420 848 H502" />
+        <path d="M528 380 V830 M546 380 V830 M564 380 V830 M582 380 V830" />
+        <path d="M516 402 H590 M516 426 H590 M516 450 H590 M516 474 H590 M516 498 H590 M516 522 H590 M516 546 H590 M516 570 H590 M516 594 H590 M516 618 H590 M516 642 H590 M516 666 H590 M516 690 H590 M516 714 H590 M516 738 H590 M516 762 H590 M516 786 H590 M516 810 H590" />
+        <path d="M616 406 V808 M634 406 V808 M652 406 V808 M670 406 V808" />
+        <path d="M604 428 H682 M604 452 H682 M604 476 H682 M604 500 H682 M604 524 H682 M604 548 H682 M604 572 H682 M604 596 H682 M604 620 H682 M604 644 H682 M604 668 H682 M604 692 H682 M604 716 H682 M604 740 H682 M604 764 H682 M604 788 H682" />
+      </g>
+
+      <!-- brug -->
+      <polygon fill="#c5ddd4" points="236,168 286,168 314,870 214,870" />
+      <polygon fill="#d7ebe5" points="286,168 314,188 332,870 314,870" />
+      <g stroke="#b7cfc8" stroke-width="1.15" fill="none">
+        <path d="M250,190 L78,870" />
+        <path d="M258,230 L128,870" />
+        <path d="M266,280 L176,870" />
+        <path d="M274,340 L220,870" />
+        <path d="M282,420 L268,870" />
+        <path d="M300,210 L520,860" />
+        <path d="M306,270 L590,820" />
+        <path d="M312,350 L640,760" />
+      </g>
+
+      <!-- roze toren -->
+      <g fill="#f0c4cb">
+        <rect x="124" y="250" width="18" height="620" />
+        <rect x="128" y="196" width="10" height="58" />
+        <circle cx="133" cy="190" r="5" />
+        <polygon points="92,438 176,438 168,492 100,492" />
+        <rect x="104" y="422" width="58" height="12" />
+      </g>
+      <g fill="none" stroke="#f8e8eb" stroke-width="1">
+        <path d="M100,452 H168 M100,470 H168" />
+        <path d="M116,438 V492 M133,438 V492 M150,438 V492" />
+      </g>
+
+      <!-- boog -->
+      <path fill="#3c3937" d="M624,610 C624,478 786,468 800,610 L800,870 L754,870 L754,628 C754,548 678,540 656,628 L656,870 L624,870 Z" />
+      <g fill="#f3efe9">
+        <circle cx="646" cy="690" r="3.4" /><circle cx="666" cy="662" r="3.4" /><circle cx="688" cy="642" r="3.4" />
+        <circle cx="712" cy="632" r="3.4" /><circle cx="736" cy="636" r="3.4" /><circle cx="758" cy="654" r="3.4" />
+        <circle cx="774" cy="680" r="3.4" /><circle cx="654" cy="724" r="3.4" /><circle cx="678" cy="700" r="3.4" />
+        <circle cx="704" cy="686" r="3.4" /><circle cx="730" cy="692" r="3.4" /><circle cx="754" cy="716" r="3.4" />
+      </g>
+      <g fill="#d7e5ec" stroke="#ffffff" stroke-width="0.7">
+        <polygon points="700,748 800,734 800,870 700,870" />
+        <path d="M716 760 V870 M734 756 V870 M752 752 V870 M770 748 V870 M788 744 V870" />
+        <path d="M702 778 H800 M702 802 H800 M702 826 H800 M702 850 H800" />
+      </g>
+      <polygon fill="#d7e5ec" points="742,700 786,692 792,748 736,760" />
+      <path d="M748,708 L786,700" stroke="#ffffff" stroke-width="0.8" />
+
+      <!-- marine gevel -->
+      <g fill="#1e4d73">
+        <rect x="214" y="548" width="26" height="322" />
+        <rect x="468" y="534" width="26" height="336" />
+        <polygon points="208,548 246,548 240,516 214,516" />
+        <polygon points="462,534 500,534 494,502 468,502" />
+        <rect x="196" y="630" width="316" height="240" />
+        <polygon points="196,630 512,630 502,604 206,604" />
+      </g>
+      <g fill="none" stroke="#f5f8f8" stroke-width="1.05">
+        <path d="M206,630 H502" />
+        <path d="M206,668 H502 M206,706 H502 M206,744 H502 M206,782 H502 M206,820 H502" />
+        <path d="M230,642 V860 M262,642 V860 M294,642 V860 M326,642 V860 M358,642 V860 M390,642 V860 M422,642 V860 M454,642 V860 M486,642 V860" />
+        <path d="M222,530 V600 M232,530 V600" />
+        <path d="M476,516 V600 M486,516 V600" />
+        <circle cx="227" cy="524" r="7" />
+        <circle cx="481" cy="510" r="7" />
+        <path d="M227,517 V531 M220,524 H234" />
+        <path d="M481,503 V517 M474,510 H488" />
+      </g>
+      <rect x="336" y="800" width="36" height="70" fill="#173e5e" />
+      <path d="M354,800 V870" stroke="#f5f8f8" stroke-width="0.8" />
+      <polygon fill="#1e4d73" points="214,516 222,500 230,516" />
+      <polygon fill="#e2c14a" points="470,502 478,486 486,502" />
+
+      <path fill="#9eb4bc" d="M0,886 H800 V968
+        Q780,992 760,968 Q740,992 720,968
+        Q700,992 680,968 Q660,992 640,968
+        Q620,992 600,968 Q580,992 560,968
+        Q540,992 520,968 Q500,992 480,968
+        Q460,992 440,968 Q420,992 400,968
+        Q380,992 360,968 Q340,992 320,968
+        Q300,992 280,968 Q260,992 240,968
+        Q220,992 200,968 Q180,992 160,968
+        Q140,992 120,968 Q100,992 80,968
+        Q60,992 40,968 Q20,992 0,968 Z" />
+
+      <rect x="0" y="876" width="800" height="10" fill="#cfc8bd" />
+
+      <g fill="#2c463c">
+        <rect x="38" y="836" width="3" height="40" />
+        <polygon points="26,842 54,842 40,804" />
+        <rect x="64" y="848" width="3" height="28" />
+        <polygon points="54,852 78,852 66,820" />
+      </g>
+
+      <g transform="translate(168,886)" fill="#1e4d73">
+        <rect x="-7" y="-36" width="4" height="36" />
+        <rect x="3" y="-36" width="4" height="36" />
+        <rect x="-11" y="-70" width="22" height="36" />
+        <path d="M0,-68 V-36" stroke="#f5f8f8" stroke-width="0.8" />
+        <rect x="-4" y="-84" width="9" height="12" fill="#f3ece4" />
+        <rect x="-5" y="-86" width="10" height="5" fill="#243044" />
+      </g>
+
+      <g class="optocht">
+        <g class="persoon" transform="translate(0,886)" fill="#1e4d73">
+          <g class="been a"><rect x="-7" y="-36" width="4" height="32" /><rect x="-8" y="-4" width="8" height="4" fill="#1a1a1a" /></g>
+          <g class="been b"><rect x="3" y="-36" width="4" height="32" /><rect x="2" y="-4" width="8" height="4" fill="#1a1a1a" /></g>
+          <rect x="-11" y="-70" width="22" height="36" />
+          <path d="M0,-68 V-36" stroke="#f5f8f8" stroke-width="0.8" />
+          <rect x="-4" y="-84" width="9" height="12" fill="#f3ece4" />
+          <rect x="-5" y="-86" width="10" height="5" fill="#243044" />
+        </g>
+        <g class="persoon" transform="translate(52,886)" fill="#f0c4cb">
+          <g class="been a"><rect x="-7" y="-36" width="4" height="32" fill="#8d8a86" /><rect x="-8" y="-4" width="8" height="4" fill="#1a1a1a" /></g>
+          <g class="been b"><rect x="3" y="-36" width="4" height="32" fill="#8d8a86" /><rect x="2" y="-4" width="8" height="4" fill="#1a1a1a" /></g>
+          <rect x="-12" y="-72" width="24" height="38" />
+          <path d="M0,-70 V-36" stroke="#f7f1f2" stroke-width="0.8" />
+          <rect x="-4" y="-86" width="9" height="12" fill="#f3ece4" />
+          <rect x="-6" y="-88" width="12" height="6" fill="#243044" />
+        </g>
+        <g class="persoon" transform="translate(104,886)" fill="#8e9498">
+          <g class="been a"><rect x="-7" y="-36" width="4" height="32" /><rect x="-8" y="-4" width="8" height="4" fill="#1a1a1a" /></g>
+          <g class="been b"><rect x="3" y="-36" width="4" height="32" /><rect x="2" y="-4" width="8" height="4" fill="#1a1a1a" /></g>
+          <rect x="-11" y="-70" width="22" height="36" />
+          <path d="M0,-68 V-36" stroke="#f4f5f5" stroke-width="0.8" />
+          <rect x="-4" y="-84" width="9" height="12" fill="#f3ece4" />
+          <rect x="-5" y="-86" width="10" height="5" fill="#243044" />
+        </g>
+      </g>
+
+      <g class="boot">
+        <g transform="translate(0,918)">
+          <polygon fill="#2a2a2a" points="0,18 16,0 96,0 112,20 102,30 10,30" />
+          <polygon fill="#e2c14a" points="30,0 82,0 76,-16 36,-16" />
+        </g>
+      </g>
+
+      <text x="400" y="1048" text-anchor="middle" fill="#243044" font-family="Century Gothic, Futura, Arial, sans-serif" font-size="34" letter-spacing="10">ROTTERDAM</text>
+    </svg>
+  </body>
+</html>

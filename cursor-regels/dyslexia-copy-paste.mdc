@@ -1,0 +1,13 @@
+---
+description: User is dyslexic — write for them; put paths/code in chat for copy-paste
+alwaysApply: true
+---
+
+# Dyslexie — schrijven en copy-paste
+
+De gebruiker is dyslectisch.
+
+- Doe zo veel mogelijk schrijfwerk zelf.
+- Zet paden, code en instructies in de chat als gewone tekst of link, klaar om te kopiëren.
+- Vertrouw niet op hardop voorlezen van lange paden of code.
+- Zie ook de header van `start-script.ps1` in Gestalt Nu Cursor.

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="Iemand houdt een deur open. Daarachter schijnt de zon naar je toe.">
+  <rect width="1440" height="900" fill="#1840C8"/>
+  <polygon points="980,760 1360,760 1440,900 620,900" fill="#FFC53D"/>
+  <rect x="980" y="36" width="390" height="864" fill="#121212"/>
+  <rect x="1020" y="76" width="310" height="824" fill="#FFE08A"/>
+  <polygon points="1088,230 1258,230 1310,900 1040,900" fill="#FFC53D"/>
+  <circle cx="1174" cy="214" r="92" fill="#FFF6D4"/>
+  <polygon points="1020,76 760,168 724,790 1020,900" fill="#FF5344"/>
+  <polygon points="1020,76 1064,96 1064,860 1020,900" fill="#E23B2E"/>
+  <ellipse cx="640" cy="790" rx="210" ry="200" fill="#161433"/>
+  <ellipse cx="610" cy="430" rx="108" ry="118" fill="#121212"/>
+  <ellipse cx="690" cy="488" rx="64" ry="74" fill="#F4B7C6"/>
+  <path d="M620 710 C 760 690, 880 540, 990 410" fill="none" stroke="#8EBEF5" stroke-width="58" stroke-linecap="round"/>
+  <circle cx="1002" cy="398" r="16" fill="#161433"/>
+</svg>

@@ -1,0 +1,246 @@
+:root {
+  color-scheme: light;
+  --papier: #edeae1;
+  --inkt: #2a2a2a;
+  --blauw: #3881f1;
+  --groen: #01c476;
+  --sans: Figtree, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { overflow-x: clip; }
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--inkt);
+  font-family: var(--sans);
+  line-height: 1.4;
+  overflow-x: clip;
+  width: 100%;
+}
+
+.proef {
+  margin: 0;
+  padding: 0.45rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background: var(--papier);
+}
+
+.proef a { color: inherit; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.9rem 1.3rem 1rem;
+  background: var(--papier);
+  width: 100%;
+  max-width: 100%;
+  contain: inline-size;
+}
+
+.merk {
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.05rem;
+}
+
+nav {
+  display: flex;
+  gap: 0.7rem 1.1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+nav a { color: inherit; text-decoration: none; }
+
+nav a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+
+.pil {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.35rem 1rem;
+  border: 2px solid var(--inkt);
+  border-radius: 999px;
+  color: var(--inkt);
+  background: transparent;
+  text-decoration: none;
+  font-weight: 560;
+}
+
+.pil:hover { background: var(--inkt); color: var(--papier); }
+
+main {
+  background: var(--papier);
+  padding: 1.5rem 0 4rem;
+}
+
+.hero {
+  width: min(1080px, calc(100% - 2.4rem));
+  margin: 0 auto;
+  min-height: calc(100vh - 8rem);
+  min-height: calc(100dvh - 8rem);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1rem;
+  align-items: center;
+  contain: inline-size;
+}
+
+.tekst { min-width: 0; }
+
+.tekst h1 {
+  margin: 0.3rem 0 0;
+  max-width: min(11em, 100%);
+  font-size: clamp(2.3rem, 4.4vw, 3.7rem);
+  font-weight: 560;
+  letter-spacing: -1.2px;
+  line-height: 1.05;
+  white-space: normal;
+}
+
+.tekst h1 em {
+  font-style: normal;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 8' preserveAspectRatio='none'%3E%3Cpath d='M2 5.2C18 2 34 7 52 4.2C70 1.4 88 6.4 118 3.2' fill='none' stroke='%2301C476' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 0.22em;
+  background-position: 0 92%;
+}
+
+.waar {
+  margin: 0.8rem 0 0;
+  font-size: 1.15rem;
+}
+
+.beeld {
+  position: relative;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.beeld img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transform: rotate(-6deg);
+}
+
+.briefje {
+  position: absolute;
+  right: 4%;
+  bottom: 6%;
+  width: min(230px, 62%);
+  background: var(--blauw);
+  color: white;
+  transform: rotate(7deg);
+  padding: 1.15rem 1.15rem 1.2rem;
+}
+
+.briefje p {
+  margin: 0 0 0.75rem;
+  font-size: 1.45rem;
+  font-weight: 560;
+  letter-spacing: -0.6px;
+  line-height: 1.15;
+}
+
+.briefje .pil {
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+.briefje .pil:hover { background: white; color: var(--blauw); }
+
+.verder {
+  width: min(1080px, calc(100% - 2.4rem));
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.blok {
+  background: var(--papier);
+  border: 1px dashed var(--blauw);
+  padding: 1.2rem 1.2rem 1.3rem;
+  min-width: 0;
+}
+
+.blok h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: -0.8px;
+  font-weight: 560;
+}
+
+.blok p { margin: 0.45rem 0 0; max-width: 36ch; }
+
+.blok .pil { margin-top: 0.9rem; }
+
+.hier {
+  width: min(1080px, calc(100% - 2.4rem));
+  margin: 1rem auto 0;
+  background: var(--papier);
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px dashed var(--blauw);
+}
+
+.hier img {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 18%;
+  transform: rotate(-2deg);
+}
+
+.hier h2 {
+  margin: 0;
+  letter-spacing: -0.8px;
+  font-size: 1.8rem;
+  font-weight: 560;
+}
+
+.hier p { margin: 0.3rem 0 0; }
+
+.knoppen { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.7rem; }
+
+@media (max-width: 800px) {
+  header { display: block; max-width: 100vw; }
+  header .pil { display: none; }
+  nav {
+    width: 100%;
+    max-width: calc(100vw - 2.6rem);
+    margin-top: 0.7rem;
+    justify-content: space-between;
+  }
+  .hero, .verder, .hier {
+    grid-template-columns: minmax(0, 1fr);
+    width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+  }
+  .hero { min-height: 0; }
+  .tekst h1 {
+    max-width: 12em;
+    font-size: 1.65rem;
+  }
+  .beeld img { transform: none; }
+  .briefje { position: static; transform: none; width: min(100%, 280px); margin: 0.6rem auto 0; }
+  .hier { justify-items: center; text-align: center; }
+  .knoppen { justify-content: center; }
+}

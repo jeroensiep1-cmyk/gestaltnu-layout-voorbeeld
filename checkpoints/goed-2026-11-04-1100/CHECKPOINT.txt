@@ -1,0 +1,16 @@
+﻿Checkpoint: goed-2026-11-03
+Datum: 2026-11-03 ~22:09
+Bron: site\ (huidige staat, ongewijzigd bewaard)
+
+VAST PUNT — niet overschrijven zonder opdracht van Jeroen.
+Apart van: voorpagina-hersteld_2026-11-03_1950
+
+Wat er goed aan is (zoals Jeroen bevestigde):
+- Eén uniforme gele crème-achtergrond
+- Geen gele balk links
+- Geen lijnen
+- Eén header
+- Brede maten
+
+Terugzetten:
+  Copy-Item -Recurse -Force "C:\Users\jeroe\gestaltnu-layout-voorbeeld\checkpoints\goed-2026-11-03\*" "C:\Users\jeroe\gestaltnu-layout-voorbeeld\site\"

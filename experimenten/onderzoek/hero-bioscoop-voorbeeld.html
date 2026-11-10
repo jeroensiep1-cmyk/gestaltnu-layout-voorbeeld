@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bioscoop-hero — Gestalt Nu</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #f6eedf;
+        color: #2a231c;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+      .kader { width: min(1120px, 96vw); padding: 1.25rem; }
+      .wenk {
+        margin: 0 0 0.75rem;
+        font-family: system-ui, sans-serif;
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #5e564c;
+      }
+      .beeld {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: #f6eedf;
+      }
+      .nota {
+        margin: 0.9rem 0 0;
+        font-family: system-ui, sans-serif;
+        font-size: 0.92rem;
+        line-height: 1.45;
+        color: #5e564c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kader">
+      <p class="wenk">Eigen poppetje · geen cirkel · kettingzaag-lijn vibe</p>
+      <!-- PNG eerst; SVG als fallback als PNG nog ontbreekt -->
+      <picture>
+        <source srcset="bioscoop-doodle-final.png?v=6" type="image/png" />
+        <img
+          class="beeld"
+          src="bioscoop-scene.svg?v=6"
+          width="3200"
+          height="1800"
+          alt="Zittend eigen poppetje in bioscoopstoel, filmscherm met maskers triggers en belemmeringen, open deur met zon en natuur."
+        />
+      </picture>
+      <p class="nota">
+        Zittend eigen poppetje, stoelenrijen, doek met maskers/triggers/belemmeringen,
+        deur met zon rechts. Geen telefoon, geen cirkel.
+      </p>
+    </div>
+  </body>
+</html>

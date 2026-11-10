@@ -1,0 +1,11 @@
+VASTE STIJLREFERENTIE Gestalt Nu (vastgelegd 2026-11-03 op verzoek van Jeroen)
+- Open Doodles-stijl, zwaardere donkerbruine lijnen
+- Vijf poppetjes: zakenman met telefoon, man in tutu met toverstaf en vleugeltjes, therapeut met schrijfblok, mummie met groen kopje, man met masker die zwaait (kettingzaag op de grond)
+- Golvende teal cirkel, bloemetjes, hartjes
+- Achtergrond: website-creme #F6EEDF, geen lijntjes tussen secties, een naadloos geheel
+- Lichte, kleurloze golfranden boven en onder foto's
+- Palet: teal, terracotta, perzik, zachtgroen, geel, donkerbruin; koppen in Fraunces
+- Niets eromheen behalve wat expliciet is afgesproken
+- Eindlay-out: website-voorpagina-met-poppetjes-v29.png (scripts in scripts/)
+Alles blijft op de computer van Grok Bot tot Jeroen in de chat akkoord geeft.
+- Monnik-en-koeien-doodle (vaste stijl): monnik-koeien-doodle-voorkant-REFERENTIE.png (monnik van voren, gezicht zichtbaar); profielversie en Jeroens chat-versie staan er ook.

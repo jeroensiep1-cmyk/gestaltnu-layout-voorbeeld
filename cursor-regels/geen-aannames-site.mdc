@@ -1,0 +1,15 @@
+---
+description: Site niet wijzigen op aanname; bekijken ≠ toepassen — details in AGENTS.md §1 en §3
+alwaysApply: true
+---
+
+# Geen aannames — eerst bevestigen (site)
+
+Volg **AGENTS.md §1** (wat mag je wijzigen) en **§3** (bekijken ≠ toepassen).
+
+Harde kern (na fouten met hero/header/v29):
+
+- Geen `site/`-wijziging op aanname.
+- Bekijken / openen / vergelijken = **geen** toestemming om toe te passen.
+- Één gevraagde wijziging per keer, tenzij Jeroen een lijst of “alles tegelijk” vraagt.
+- Onderzoek/tooling mag door zonder ja (`altijd-doorgaan.mdc`); dat is geen vrijbrief om `site/` te herschrijven.
