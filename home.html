@@ -1,20 +1,185 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      /* Lokale preview: oude service worker op /sw.js gaf 404 op de hero-PNG → crème “wit” scherm.
+         Eenmalig unregister + caches legen, daarna herladen. */
+      (function () {
+        var key = "gn-sw-cleared-v1";
+        if (!("serviceWorker" in navigator)) return;
+        if (sessionStorage.getItem(key)) return;
+        var hadController = !!navigator.serviceWorker.controller;
+        Promise.resolve()
+          .then(function () { return navigator.serviceWorker.getRegistrations(); })
+          .then(function (regs) {
+            return Promise.all(regs.map(function (r) { return r.unregister(); }));
+          })
+          .then(function () {
+            if (!window.caches) return;
+            return caches.keys().then(function (keys) {
+              return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+            });
+          })
+          .then(function () {
+            sessionStorage.setItem(key, "1");
+            if (hadController) location.reload();
+          })
+          .catch(function () { sessionStorage.setItem(key, "1"); });
+      })();
+    </script>
     <title>Gestalttherapie in Rotterdam | Gestalt Nu</title>
-    <link rel="stylesheet" href="/site/backups/stijl.css?v=home-short" />
+    <meta
+      name="description"
+      content="Gestalttherapie in Rotterdam. Kijk met andere ogen naar de wereld: gesprekken, bewustwordingsgroep en ademwerk bij Jeroen Siep, Spiegelnisserkade."
+    />
+    <link rel="canonical" href="https://www.gestaltnu.nl/" />
+    <meta name="theme-color" content="#f6eedf" />
+    <meta property="og:title" content="Gestalttherapie in Rotterdam | Gestalt Nu" />
+    <meta property="og:description" content="Kijk met andere ogen naar de wereld. Gesprekken of de groep, aan de kade in Rotterdam." />
+    <meta property="og:url" content="https://www.gestaltnu.nl/" />
+    <meta property="og:locale" content="nl_NL" />
+    <link rel="icon" href="/site/backups/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/site/backups/icon-512.png" />
+    <link rel="manifest" href="/site/backups/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:opsz,wght@9..144,520;9..144,620&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/site/backups/stijl.css?v=hero-logo-back" />
     <style>
-      /* Fallback als stil.css faalt: nooit puur wit leeg */
-      html, body { margin: 0; background: #f6eedf; color: #2a231c; }
-      .hero-fallback {
-        display: block;
-        width: min(1100px, 100%);
-        height: auto;
-        margin: 0 auto;
+      /* Hero-copy zichtbaar over de linker cream-zone (beeld houdt foto/logo/bloemen). */
+      body.voorpagina .held-tekst {
+        position: absolute;
+        z-index: 2;
+        left: 2.8%;
+        top: 22%;
+        width: min(40%, 27rem);
+        /* Dek oude baked-in ondertitel + Meld je aan / Lees meer af. */
+        bottom: 14%;
+        padding: 0.35rem 0.65rem 1.1rem;
+        background: #f6eedf;
+        line-height: normal;
+        color: var(--inkt, #2a231c);
+        box-sizing: border-box;
+      }
+      body.voorpagina .held-tekst h1 {
+        position: relative;
+        margin: 0 0 0.85rem;
+        padding-bottom: 0.55rem;
+        font-family: Fraunces, Georgia, serif;
+        font-weight: 620;
+        font-size: clamp(1.85rem, 4.2vw, 3.15rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        max-width: 11ch;
+        /* Zelfde teal als backups/stijl.css --teal; eerdere herstel-aanpak. */
+        border-bottom: 3px solid var(--teal, #0f6e6e);
+      }
+      /* Extra handgetekende golf bovenop de streep — SVG uit backups/stijl.css (#menu a::after). */
+      body.voorpagina .held-tekst h1::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 78%;
+        bottom: -0.28rem;
+        height: 0.7rem;
+        pointer-events: none;
+        background:
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 10' preserveAspectRatio='none'%3E%3Cpath d='M1 6c12-3 24-4 36-2 14 2 26 4 40 2 12-2 22-4 30-2' fill='none' stroke='%230f6e6e' stroke-width='2.8' stroke-linecap='round' opacity='0.9'/%3E%3C/svg%3E")
+          left bottom / 100% 100% no-repeat;
+      }
+      body.voorpagina .held-tekst .lede {
+        margin: 0 0 1.15rem;
+        max-width: 28ch;
+        color: var(--gedempt, #5e564c);
+        font-size: clamp(0.98rem, 1.35vw, 1.12rem);
+        line-height: 1.45;
+      }
+      body.voorpagina .held-tekst .held-acties {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.85rem 1.15rem;
+      }
+      body.voorpagina .held-tekst .held-acties .knop {
+        min-height: 2.7rem;
+        padding: 0.45rem 1.15rem;
+        border-radius: 0.35rem 0.7rem 0.35rem 0.85rem;
+      }
+      body.voorpagina .held-tekst .held-acties .meer {
+        font-size: 1.02rem;
+      }
+      @media (max-width: 720px) {
+        body.voorpagina .held-tekst {
+          left: 3%;
+          top: 18%;
+          width: min(92%, 24rem);
+          padding: 0.4rem 0.5rem 0.7rem;
+        }
+        body.voorpagina .held-tekst h1 {
+          max-width: 14ch;
+          font-size: clamp(1.55rem, 7vw, 2.2rem);
+        }
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.gestaltnu.nl/#website",
+            "url": "https://www.gestaltnu.nl/",
+            "name": "Gestalt Nu",
+            "inLanguage": "nl-NL",
+            "publisher": { "@id": "https://www.gestaltnu.nl/#praktijk" }
+          },
+          {
+            "@type": ["ProfessionalService", "LocalBusiness"],
+            "@id": "https://www.gestaltnu.nl/#praktijk",
+            "name": "Gestalt Nu",
+            "url": "https://www.gestaltnu.nl/",
+            "telephone": "+31644008880",
+            "email": "info@gestaltnu.nl",
+            "priceRange": "€€",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Spiegelnisserkade 184",
+              "postalCode": "3031 VM",
+              "addressLocality": "Rotterdam",
+              "addressCountry": "NL"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 51.9296476, "longitude": 4.4917309 },
+            "areaServed": "Rotterdam",
+            "founder": { "@id": "https://www.gestaltnu.nl/#jeroen" },
+            "openingHoursSpecification": [
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "20:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "09:00", "closes": "17:00" }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.gestaltnu.nl/#jeroen",
+            "name": "Jeroen Siep",
+            "jobTitle": "Gestalttherapeut en coach",
+            "worksFor": { "@id": "https://www.gestaltnu.nl/#praktijk" },
+            "telephone": "+31644008880",
+            "email": "info@gestaltnu.nl"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.gestaltnu.nl/#webpage",
+            "url": "https://www.gestaltnu.nl/",
+            "name": "Kijk met andere ogen naar de wereld",
+            "isPartOf": { "@id": "https://www.gestaltnu.nl/#website" },
+            "about": { "@id": "https://www.gestaltnu.nl/#praktijk" },
+            "inLanguage": "nl-NL",
+            "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede"] }
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="voorpagina">
     <a class="skip" href="#inhoud">Naar de inhoud</a>
@@ -22,16 +187,17 @@
       <main id="inhoud">
         <section class="voorpagina-toneel" aria-label="Hero">
           <img
-            class="voorpagina-beeld hero-fallback"
-            src="/site/backups/beelden/voorpagina-origineel.jpg?v=web-213k"
+            class="voorpagina-beeld"
+            src="/afbeeldingen/voorpagina-origineel-bron-8mb.png?v=bron-1"
             width="1600"
             height="900"
-            alt="Gestalt Nu: logo met groene cirkel over de meisjesfoto, golfjes en tekst Kijk met andere ogen."
+            alt="Gestalt Nu: logo met groene cirkel over de meisjesfoto, golfjes, bloemen en bladeren."
           />
           <header class="kop kop--over">
             <a class="merk merk--hit" href="/home.html" aria-current="page">
               <span class="visueel-verborgen">Gestalt Nu</span>
             </a>
+            <button class="menu-knop" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
             <nav id="menu" aria-label="Hoofdmenu">
               <a href="/site/gesprekken/">Individuele gesprekken</a>
               <a href="/site/bewustwordingsgroep/">Bewustwordingsgroep</a>
@@ -42,13 +208,35 @@
             </nav>
             <a class="kop-app" href="https://wa.me/31644008880?text=Hoi%20Jeroen%2C%20ik%20wil%20graag%20kennismaken.">Stuur een app</a>
           </header>
+          <div class="held-tekst">
+            <h1>Kijk met andere ogen naar de wereld</h1>
+            <p class="lede">
+              Stel dat je je leven zo mooi kan maken als je zelf wilt,
+              zou je er dan voor durven gaan?
+            </p>
+            <div class="held-acties">
+              <a class="knop" href="/site/gesprekken/">Individuele gesprekken</a>
+              <a class="meer" href="/site/bewustwordingsgroep/">Bewustwordingsgroep</a>
+            </div>
+          </div>
         </section>
+
         <section class="deuren" aria-label="Hoofdpagina's">
-          <a class="deur" href="/site/gesprekken/"><small>Aan huis</small><strong>Gesprekken</strong></a>
-          <a class="deur" href="/site/bewustwordingsgroep/"><small>Vijf vrijdagen</small><strong>De groep</strong></a>
-          <a class="deur" href="/site/ademwerk/"><small>Lichaam</small><strong>Ademwerk</strong></a>
+          <a class="deur" href="/site/gesprekken/">
+            <small>Aan huis</small>
+            <strong>Gesprekken</strong>
+          </a>
+          <a class="deur" href="/site/bewustwordingsgroep/">
+            <small>Vijf vrijdagen</small>
+            <strong>De groep</strong>
+          </a>
+          <a class="deur" href="/site/ademwerk/">
+            <small>Lichaam</small>
+            <strong>Ademwerk</strong>
+          </a>
         </section>
       </main>
+
       <footer class="voet">
         <div class="voet-grid">
           <section>
@@ -57,11 +245,37 @@
               Spiegelnisserkade 184<br />
               3031 VM Rotterdam<br />
               <a href="tel:+31644008880">06 44 00 88 80</a><br />
+              <a href="https://wa.me/31644008880">WhatsApp</a><br />
               <a href="mailto:info@gestaltnu.nl">info@gestaltnu.nl</a>
             </address>
           </section>
+          <nav aria-label="Pagina's">
+            <h2>Pagina's</h2>
+            <ul>
+              <li><a href="/home.html">Home</a></li>
+              <li><a href="/site/bewustwordingsgroep/">Bewustwordingsgroep</a></li>
+              <li><a href="/site/gesprekken/">Gesprekken</a></li>
+              <li><a href="/site/ademwerk/">Ademwerk</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Meer">
+            <h2>Meer</h2>
+            <ul>
+              <li><a href="/site/over/">Over Jeroen</a></li>
+              <li><a href="/site/over/#contact">Contact</a></li>
+              <li><a href="/site/mindfulness/">Mindfulness</a></li>
+            </ul>
+          </nav>
         </div>
+        <p class="klein">
+          Jeroen Siep is gestalttherapeut en coach. Hij is geen BIG-geregistreerd
+          psychotherapeut. Maandag tot vrijdag 8:00–20:00. Zaterdag en zondag 9:00–17:00.
+        </p>
       </footer>
     </div>
+    <script src="/site/backups/app.js"></script>
   </body>
 </html>
+
+
+
