@@ -1,0 +1,16 @@
+C:\Users\jeroe\AppData\Local\Temp	map
+C:\Users\jeroe\gestaltnu-layout-voorbeeld	map
+C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor	map
+C:\Users\jeroe\AppData\Local\Programs\Python\Python312\python.exe	bestand
+C:\Users\jeroe\AppData\Local\Programs\Python\Python312	map
+C:\Program Files\Git\bin\git.exe	bestand
+C:\Program Files\Git\cmd\git.exe	bestand
+C:\Program Files\Git	map
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe	proces
+C:\Users\jeroe\AppData\Local\Programs\cursor
+C:\Windows\System32\cmd.exe
+NOTITIE	Cursor maakt bij elke Shell-actie een nieuw Temp\ps-script-<GUID>.ps1; vaste GUID-regels hieronder dekken dat niet.
+C:\Users\jeroe\AppData\Local\Temp\ps-script-*.ps1	bestand
+NOTITIE	Norton accepteert wildcards soms niet in Uitsluitingen. Werkt ps-script-*.ps1 niet: map-uitsluiting Temp (regel 1) aanscherpen, of nieuw script uit Norton Activiteit → Toevoegen aan uitsluitingen (herhaal per incident).
+C:\Users\jeroe\AppData\Local\Temp\ps-script-e07f007f-5877-4a44-b9b3-88ff2314e59a.ps1	bestand
+C:\Users\jeroe\AppData\Local\Temp\ps-script-106575ca-8111-40d8-a83f-05d58a07e8c9.ps1	bestand

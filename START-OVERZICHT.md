@@ -86,6 +86,24 @@ Pas live als Jeroen **drie keer** achter elkaar expliciet ja zegt.
 Hero en logo’s horen in `site\beelden\` / `site\backups\beelden\` (web-JPEG voor de hero).  
 Grote bron-PNG bewaren als `voorpagina-origineel-bron-8mb.png`.
 
+## 11) Later — open (nog niet doen)
+
+Vastgelegd 10 nov 2026. **Niet nu uitvoeren** tot Jeroen het vraagt.
+
+1. **Header-logo groter** — het logo in de header moet groter worden.
+2. **Groene cirkel om het meisje** — de teal/enso-cirkel moet weer beginnen zoals eerder: om het meisje in de hero heen.
+3. **Cirkel = storytelling-drager** — niet alleen decoratief. Vanuit die groene cirkel om het meisje moet de verhaallijn / storytelling gebruikt kunnen worden.
+
+Uitgebreide notitie:  
+`C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\nieuwe website\later-logo-en-groene-cirkel.md`
+
+## 12) Known issue — voice call / chat onzichtbaar
+
+Vastgelegd 12 nov 2026 (ook gezien 11 nov). Tijdens voice call ziet Jeroen agent-tekst vaak **niet** in de chat.
+
+Agents: tekst **langzaam voorlezen** en/of naar een bestand schrijven en openen. Details:  
+`nieuwe website\known-issue-voice-chat-niet-zichtbaar.md` · `AGENTS.md` §7
+
 ---
 
 Daarna: vijf kernregels in `.cursor\rules\`, header van `start-script.ps1`, snelle werkcheck (preview/scripts/Norton).

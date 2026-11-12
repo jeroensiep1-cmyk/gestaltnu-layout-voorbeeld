@@ -19,6 +19,7 @@ Hieronder staat de **kopie** zodat je alles op één plek ziet, zonder te zoeken
 | `style-reference.mdc` | Stijlblad, poppetjes, kleuren |
 | `live-site-no-touch.mdc` | `site/` niet aanraken zonder ja |
 | `dyslexia-copy-paste.mdc` | Schrijven + plakklare paden/tekst |
+| `chat-betrouwbaar-copy-paste.mdc` | Composer queue/steer + zichtbare copy-paste in chat |
 
 ## Extra (ook hier gekopieerd)
 
@@ -35,3 +36,7 @@ Hieronder staat de **kopie** zodat je alles op één plek ziet, zonder te zoeken
 
 `C:\Users\jeroe\OneDrive\Bureaublad\Gestalt Nu Cursor\start-script.ps1`  
 (alleen het commentblok bovenaan = GOAL, SAFETY, STYLE, STORAGE, enz.)
+
+## Composer / chat-fix (11 nov 2026)
+
+Zie `CHAT-COMPOSER-INSTELLINGEN.md` in de map Gestalt Nu Cursor — **steer → queue** in User `settings.json`.

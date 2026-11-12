@@ -1,0 +1,1 @@
+powershell.exe is een legitiem Windows-systeemprogramma dat Cursor gebruikt om scripts te draaien. Norton blokkeert het onterecht als malware. Graag de uitsluiting voor dit pad aanpassen naar type proces: C:\Windows\System32\WindowsPowerShell\V1.0\powershell.exe

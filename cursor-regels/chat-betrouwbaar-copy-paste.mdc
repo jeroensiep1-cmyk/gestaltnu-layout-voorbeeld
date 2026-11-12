@@ -1,0 +1,26 @@
+---
+description: Betrouwbare chat voor copy-paste (geen path-only, geen steer-verlies)
+alwaysApply: true
+---
+
+# Chat betrouwbaar — copy-paste en korte antwoorden
+
+## Oorzaak (bekende fout)
+
+Als **Composer “steer”** aan staat en er draait voice/agent tegelijk, worden nieuwe berichten **in de lopende turn gestuurd**. Antwoorden kunnen **afbreken** of in de UI **niet zichtbaar** zijn. Jeroen hield `queueMessageDefaultBehavior` op **steer** — dat is hersteld naar **queue** in Cursor User settings.
+
+## Agent — altijd
+
+1. **Paden en copy-paste tekst** nooit als enige kale regels (`C:\...` alleen). Altijd:
+   - Eerst één korte labelzin (bijv. “Kopieer deze regels:”).
+   - Daarna elk pad in een **eigen** codeblok (drie backticks), geen markdown-links in het pad.
+2. **Copy-paste opdrachten:** geen tools vóór de zichtbare chattekst. Eerst het antwoord in chat, daarna pas optioneel bestanden.
+3. **SendToCall / voice:** niet gebruiken als vervanging van chattekst die Jeroen moet kopiëren. Voice is aanvulling; **het volledige antwoord staat in chat**.
+4. **Geen lange onderzoeksronde** als de gebruiker alleen twee regels of één pad vraagt — direct leveren, tenzij hij expliciet debug vraagt.
+
+## Gebruiker — controleer in Cursor Settings → Agents
+
+- **Queue messages:** `queue` (niet `steer`)
+- **Manual send while agent runs:** `interrupt` of wachten (niet `steer` voor copy-paste werk)
+
+Zie ook `Gestalt Nu Cursor\CHAT-COMPOSER-INSTELLINGEN.md`.

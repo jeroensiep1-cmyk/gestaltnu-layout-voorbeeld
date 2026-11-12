@@ -76,3 +76,11 @@ User-rules in Cursor Settings (dubbelcheck, bewustwordingsgroep, kortingscodes) 
 
 - Bij **goedgekeurd** werk aan de site: zet duidelijke spelfouten in zichtbare tekst meteen recht.
 - Verandert een term in een zin of kop: pas het bijbehorende label in **hetzelfde blok** mee aan. Laat geen oud label achter.
+
+## 7. Voice call — chattekst kan onzichtbaar zijn
+
+Known issue (gedocumenteerd 12 nov 2026; ook gezien 11 nov 2026). Details: `nieuwe website/known-issue-voice-chat-niet-zichtbaar.md`.
+
+- Tijdens een voice call komen agent-teksten **vaak niet** als normale chatbubbels bij Jeroen in beeld (voice/transcript i.p.v. chat; soms `SendToCall` → “No call is listening” terwijl er wél een call open lijkt).
+- Jeroen typt moeilijk; hij heeft **zichtbare** tekst nodig om te volgen en te kopiëren.
+- **Doe dit:** belangrijke tekst **langzaam hardop voorlezen**, en/of naar een bestand onder `Gestalt Nu Cursor` schrijven en **openen**. Niet beweren dat chattekst “klaar staat” zonder dat hij het ziet of bevestigt.

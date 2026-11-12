@@ -1,0 +1,2 @@
+C:\Users\jeroe\AppData\Local\Temp
+C:\Users\jeroe\AppData\Local\Programs\Python\python.exe
